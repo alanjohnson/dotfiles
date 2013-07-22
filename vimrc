@@ -94,7 +94,7 @@ map n nzz
 "---------------- Indents and tabs ---------------"
 set autoindent										" set the cursor at same indent as line above
 set smartindent										" try to be smart about indenting (C-style)
-"set expandtab										" tabs are spaces, not tabs.
+set expandtab											" tabs are spaces, not tabs.
 "set smarttab											" tab and backspace are smart
 set shiftwidth=2									" spaces for each step of (auto)indent
 set softtabstop=2									" set virtual tab stop (compat for 8-wide tabs)
