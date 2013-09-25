@@ -9,17 +9,13 @@ export PATH=~/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
 #nodejs
 export NODE_PATH=/usr/local/lib/node_modules
 
-###Grails Setup
-export JAVA_OPTS="-Xmx1024m -XX:MaxPermSize=256m"
-export GRAILS_HOME=~/Development/grails-1.3.7
-export PATH=$PATH:$GRAILS_HOME/bin
-
 ###Rails MYSQL server setup
 #export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 
 ###Aliases
 alias swgreek='sass --watch "/Users/alan/sites/aj/gematria_greek/sass/":"/Users/alan/sites/aj/gematria_greek/css/" -t compact --unix-newlines'
 #alias vim='mvim -v' #use macvim instead of default vim
+alias be="bundle exec"
 
 # This loads RVM into a shell session.
 [[ -s "/Users/alanj/.rvm/scripts/rvm" ]] && source "/Users/alanj/.rvm/scripts/rvm"

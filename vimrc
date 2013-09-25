@@ -307,7 +307,7 @@ au BufWinEnter * silent! loadview "make vim load view (state) (folds, cursor, et
 "" Lisp
 "autocmd Filetype lisp,scheme setlocal equalprg=~/.vim/bin/lispindent.lisp expandtab shiftwidth=2 tabstop=8 softtabstop=2
 "" Ruby
-"autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 "" PHP
 "autocmd FileType php setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 "" X?HTML & XML
