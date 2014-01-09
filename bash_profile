@@ -14,6 +14,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 
 ###Aliases
 alias swgreek='sass --watch "/Users/alan/sites/aj/gematria_greek/sass/":"/Users/alan/sites/aj/gematria_greek/css/" -t compact --unix-newlines'
+alias swfs='sass --watch "/Users/alan/sites/aj/www_fancyscribbles/sass/":"/Users/alan/sites/aj/www_fancyscribbles/css/" -t compact --unix-newlines'
 #alias vim='mvim -v' #use macvim instead of default vim
 alias be="bundle exec"
 
