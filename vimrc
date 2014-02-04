@@ -89,6 +89,7 @@ if has('syntax')
 endif
 
 if has('statusline')
+  "set laststatus=2                  " Always show statusline, even if only 1 window.
   "Status line gnarliness
   "set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 endif
