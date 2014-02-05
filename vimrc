@@ -286,6 +286,8 @@ nmap <silent> <c-s-l> <C-W>l
 map <A-left> :tabp<CR>
 map <A-right> :tabn<CR>
 
+" I use Ack a lot, the Cap A always gets me, so I'm using a leader key remap instead.  This maps LeaderKey+a to :Ack -a
+nnoremap <leader>a :Ack<Space>-a<Space>
 "---------------------- END ----------------------"
 "
 "
@@ -383,10 +385,14 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 "" X?HTML & XML
 "autocmd FileType html,xhtml,xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 "" CSS
-"autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+"" SCSS
+autocmd FileType scss setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+"" SASS
+autocmd FileType sass setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 "" JavaScript
 "" autocmd BufRead,BufNewFile *.json setfiletype javascript
-"autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 "let javascript_enable_domhtmlcss=1
 "---------------------- END ----------------------"
 "
