@@ -287,7 +287,9 @@ map <A-left> :tabp<CR>
 map <A-right> :tabn<CR>
 
 " I use Ack a lot, the Cap A always gets me, so I'm using a leader key remap instead.  This maps LeaderKey+a to :Ack -a
-nnoremap <leader>a :Ack<Space>-a<Space>
+" Also uses project Root plugin to search from root of current project
+nnoremap <leader>a :ProjectRootExe Ack<Space>-a<Space>
+
 "---------------------- END ----------------------"
 "
 "
