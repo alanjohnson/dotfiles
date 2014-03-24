@@ -38,3 +38,10 @@ parse_git_branch() {
 
 export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\$(parse_git_branch)\n\$"
 
+export PATH=$PATH:$(brew --prefix mysql)/bin #Homebrew path
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# UNCOMMENT these when facing problem in installing gems ( like libv8 and therubyracer )
+#export CC=/usr/local/bin/gcc-4.9
+#export CPP=/usr/local/bin/cpp-4.9
+#export CXX=/usr/local/bin/g++-4.9
