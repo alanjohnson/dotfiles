@@ -45,3 +45,9 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #export CC=/usr/local/bin/gcc-4.9
 #export CPP=/usr/local/bin/cpp-4.9
 #export CXX=/usr/local/bin/g++-4.9
+
+#  load up the virtualenvwrapper.sh script into your terminal windows. This will give you the power of virtualenvwrapper.
+nano ~/.bashrc
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+

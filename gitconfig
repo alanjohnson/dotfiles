@@ -5,6 +5,9 @@
 	ui = true
 [alias]
 	mylog = log --pretty=format:'%C(yellow)%h%Creset %C(bold blue)<%an>%Creset %C(red)%d%Creset %s %Cgreen(%cr) ' --abbrev-commit --date=short --branches
+	s = status
+	sb = status -sb
+	undo = reset --soft HEAD~1
 [core]
 	excludesfile = ~/.gitignore
 [diff]

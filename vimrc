@@ -288,7 +288,7 @@ map <A-right> :tabn<CR>
 
 " I use Ack a lot, the Cap A always gets me, so I'm using a leader key remap instead.  This maps LeaderKey+a to :Ack -a
 " Also uses project Root plugin to search from root of current project
-nnoremap <leader>a :ProjectRootExe Ack<Space>-a<Space>
+nnoremap <leader>a :ProjectRootExe Ack<Space>
 
 "---------------------- END ----------------------"
 "
@@ -321,6 +321,11 @@ set showmode                    " show what mode you're in (i.e. visual)
 "set ff=unix
 "imap ii <C-[> " hit i twice in a row, and it will go back ot command mode (i to enter edit mode, i again to go back = handy).
 "set noerrorbells "Turn off error bells
+
+" commands for re-tabbing, when retab isn't cutting it.
+:command! -range=% -nargs=0 Tab2Space execute '<line1>,<line2>s#^\t\+#\=repeat(" ", len(submatch(0))*' . &ts . ')'
+:command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'
+
 "---------------------- END ----------------------"
 "
 "
