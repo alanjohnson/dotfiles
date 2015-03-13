@@ -1,0 +1,1 @@
+These area for use in VIM, if using Powerline, the Powerline variant has the extra bits needed to make the plugin look right.
