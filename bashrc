@@ -21,9 +21,6 @@ parse_git_branch() {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ →\ \1/'
 }
 
-# fix bundle exe is not install error on some git repos
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # Options used are listed below:
 #\[\e[32m\] = set color to green
 #\u@ = display user (/u) and append the @ sign after it
@@ -42,12 +39,14 @@ export PATH=$PATH:$(brew --prefix mysql)/bin #Homebrew path
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # UNCOMMENT these when facing problem in installing gems ( like libv8 and therubyracer )
-#export CC=/usr/local/bin/gcc-4.9
-#export CPP=/usr/local/bin/cpp-4.9
-#export CXX=/usr/local/bin/g++-4.9
+export CC=/usr/local/bin/gcc-4.9
+export CPP=/usr/local/bin/cpp-4.9
+export CXX=/usr/local/bin/g++-4.9
 
 #  load up the virtualenvwrapper.sh script into your terminal windows. This will give you the power of virtualenvwrapper.
 #nano ~/.bashrc
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+# fix bundle exe is not install error on some git repos
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

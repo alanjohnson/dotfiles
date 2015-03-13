@@ -48,6 +48,12 @@ autocmd VimEnter * NERDTree
 " POWERLINE - Status line plugin settings
 let g:Powerline_symbols = 'fancy'
 set laststatus=2                  " Always show statusline, even if only 1 window.
+
+
+" Tagbar (install info: https://thomashunter.name/blog/installing-vim-tagbar-with-macvim-in-os-x/)
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
+let g:tagbar_width=26                          " Default is 40, seems too wide
+map <silent><leader>y :TagbarToggle<CR>                " Display panel with y (or ,y)
 "---------------------- END ----------------------"
 "
 "
@@ -290,6 +296,8 @@ map <A-right> :tabn<CR>
 " Also uses project Root plugin to search from root of current project
 nnoremap <leader>a :ProjectRootExe Ack<Space>
 
+" I also use Ag (Silver Surfer)
+nnoremap <leader>A :ProjectRootExe Ag<Space>
 "---------------------- END ----------------------"
 "
 "

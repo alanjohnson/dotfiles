@@ -2,3 +2,5 @@
 .DS_Store
 better_errors.rb
 *.orig
+.ruby-gemset
+.env

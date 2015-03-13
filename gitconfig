@@ -21,3 +21,5 @@
 	trustExitCode = true
 [push]
 	default = current
+[help]
+	autocorrect = 15

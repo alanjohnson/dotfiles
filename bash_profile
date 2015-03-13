@@ -3,6 +3,8 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+source ~/.profile
+
 #mysql path
 #export PATH=~/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
 export PATH=/usr/local/Cellar/mysql55/5.5.30:$PATH
