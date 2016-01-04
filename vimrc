@@ -3,7 +3,7 @@ set nocompatible                  " This option stops vim from behaving in a str
 set title                         " titlebar support
 
 "set termencoding=utf-8
-"scriptencoding utf-8             " Set script language
+scriptencoding utf-8              " Set script language
 set encoding=utf-8                " sets how vim shall represent characters internally. Utf-8 is necessary for most flavors of Unicode.
 "set fileencodings=utf-8,latin1    " sets the encoding for a particular file (local to buffer)
 "set fillchars+=stl:\ ,stlnc:\     " disable statusline fillchars
@@ -45,10 +45,16 @@ let NERDTreeAutoCenter=1
 let NERDChristmasTree=1
 autocmd VimEnter * NERDTree
 
-" POWERLINE - Status line plugin settings
-let g:Powerline_symbols = 'fancy'
-set laststatus=2                  " Always show statusline, even if only 1 window.
-
+" LightLine - replacement form old POWERLINE plugin - Status line plugin settings
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"x":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '|', 'right': '|' }
+      \ }
+set laststatus=2
 
 " Tagbar (install info: https://thomashunter.name/blog/installing-vim-tagbar-with-macvim-in-os-x/)
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
