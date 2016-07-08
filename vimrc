@@ -43,6 +43,7 @@ let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
 let NERDTreeAutoCenter=1
 let NERDChristmasTree=1
+let g:colorizer_auto_filetype='css,sass,scss'
 autocmd VimEnter * NERDTree
 
 " LightLine - replacement form old POWERLINE plugin - Status line plugin settings
