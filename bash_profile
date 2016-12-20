@@ -3,8 +3,9 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
-source ~/.profile
-
+if [ -f ~/.profile ]; then
+  source ~/.profile
+fi
 #mysql path
 #export PATH=~/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
 export PATH=/usr/local/Cellar/mysql55/5.5.30:$PATH
@@ -25,3 +26,7 @@ alias be="bundle exec"
 
 # Use bundler always
 export USE_BUNDLER=force
+
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
