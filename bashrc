@@ -42,11 +42,6 @@ export PATH=$PATH:$(brew --prefix mysql)/bin #Homebrew path
 #export CPP=/usr/local/bin/cpp-4.9
 #export CXX=/usr/local/bin/g++-4.9
 
-#  load up the virtualenvwrapper.sh script into your terminal windows. This will give you the power of virtualenvwrapper.
-#nano ~/.bashrc
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-
 # fix bundle exe is not install error on some git repos
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
