@@ -78,7 +78,7 @@ set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatib
 "
 "
 "------------ Setting up the visuals -------------"
-"color solarized  
+"color solarized
 set guifont=Courier_New:h16       " set font and font size
 "set guifont=Terminus\ 9          " I hear this is a great font, need to check it out.
 "set guifont=ProggyClean\ 12
@@ -362,12 +362,9 @@ set ffs=unix,dos,mac            " Try recognizing dos, unix, and mac line ending
 "
 "-------------------- BACKUP / UNDO / SWAP---------------------"
 " First, Create directories if they don't exist
-silent execute '!mkdir -p $HOME/.vimbackup'
-silent execute '!mkdir -p $HOME/.vimswap'
-silent execute '!mkdir -p $HOME/.vimviews'
-silent !mkdir $HOME/.vimbackup// > /dev/null 2>&1 " make it if it's not there
-silent !mkdir $HOME/.vimswap// > /dev/null 2>&1 " make it if it's not there
-silent !mkdir $HOME/.vimviews// > /dev/null 2>&1 " make it if it's not there
+silent !mkdir $HOME/.vimbackup// > /dev/null 2>&1
+silent !mkdir $HOME/.vimswap// > /dev/null 2>&1
+silent !mkdir $HOME/.vimviews// > /dev/null 2>&1
 
 "set viminfo=%100,'100,/100,h,\"500,:100,n~/.viminfo
 "set viminfo='100,f1
@@ -452,4 +449,3 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 " }
-
