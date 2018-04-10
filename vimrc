@@ -362,9 +362,15 @@ set ffs=unix,dos,mac            " Try recognizing dos, unix, and mac line ending
 "
 "-------------------- BACKUP / UNDO / SWAP---------------------"
 " First, Create directories if they don't exist
-silent !mkdir $HOME/.vimbackup// > /dev/null 2>&1
-silent !mkdir $HOME/.vimswap// > /dev/null 2>&1
-silent !mkdir $HOME/.vimviews// > /dev/null 2>&1
+if !isdirectory("$HOME/.vimbackup")
+    call mkdir("$HOME/.vimbackup", "p")
+endif
+if !isdirectory("$HOME/.vimswap")
+    call mkdir("$HOME/.vimswap", "p")
+endif
+if !isdirectory("$HOME/.vimviews")
+    call mkdir("$HOME/.vimviews", "p")
+endif
 
 "set viminfo=%100,'100,/100,h,\"500,:100,n~/.viminfo
 "set viminfo='100,f1
