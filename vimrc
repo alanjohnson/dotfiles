@@ -83,6 +83,7 @@ set guifont=Courier_New:h16       " set font and font size
 "set guifont=Terminus\ 9          " I hear this is a great font, need to check it out.
 "set guifont=ProggyClean\ 12
 syntax on
+set t_Co=256
 if has('syntax')
     syntax on                     " syntax highlighting on
     filetype on                   " Enable filetype detection
