@@ -20,6 +20,25 @@ cd ~/Sites/                       " Set the current/startup folder to something 
 "
 "
 "---------------- Plugin Settings ----------------"
+" Minpac - used to update all get repo plugins in one goo
+packadd minpac
+call minpac#init()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
+call minpac#add('tpope/vim-unimpaired')
+call minpac#add('scrooloose/nerdtree')
+call minpac#add('tpope/vim-rails')
+call minpac#add('mileszs/ack.vim')
+call minpac#add('severin-lemaignan/vim-minimap')
+call minpac#add('rking/ag.vim')
+call minpac#add('lilydjwg/colorizer')
+call minpac#add('itchyny/lightline.vim')
+call minpac#add('ericbn/vim-solarized')
+call minpac#add('adelarsq/vim-matchit')
+call minpac#add('wincent/command-t')
+call minpac#add('dbakker/vim-projectroot')
+"---------------------- END ----------------------"
+
 " NERD Tree
 au BufEnter * lcd %:p:h         " set nerdtree to open in the current files folder
 au VimEnter *  NERDTree         " open nerd tree on startup
@@ -76,7 +95,8 @@ set guifont=Courier_New:h16       " set font and font size
 "set guifont=Terminus\ 9          " I hear this is a great font, need to check it out.
 "set guifont=ProggyClean\ 12
 syntax on
-set t_Co=256
+set termguicolors
+"set t_Co=256
 if has('syntax')
     syntax on                     " syntax highlighting on
     filetype on                   " Enable filetype detection
