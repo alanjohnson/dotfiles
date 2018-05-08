@@ -4,3 +4,6 @@
 [submodule "vim/pack/minpac/start/command-t"]
 	path = vim/pack/minpac/start/command-t
 	url = https://github.com/wincent/command-t
+[submodule "vim/pack/minpac/opt/minpac"]
+	path = vim/pack/minpac/opt/minpac
+	url = https://github.com/k-takata/minpac.git
