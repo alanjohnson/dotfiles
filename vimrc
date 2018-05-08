@@ -20,13 +20,6 @@ cd ~/Sites/                       " Set the current/startup folder to something 
 "
 "
 "---------------- Plugin Settings ----------------"
-" PATHOGEN
-runtime! autoload/pathogen.vim
-silent! call pathogen#infect()
-silent! call pathogen#runtime_append_all_bundles()
-"Must run helptags AFTER pathogen#runtime_append_all_bundles() to form tags properly.
-silent! call pathogen#helptags()  " better to call this in update-bundles
-
 " NERD Tree
 au BufEnter * lcd %:p:h         " set nerdtree to open in the current files folder
 au VimEnter *  NERDTree         " open nerd tree on startup
