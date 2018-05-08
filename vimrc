@@ -38,6 +38,9 @@ call minpac#add('ericbn/vim-solarized')
 call minpac#add('adelarsq/vim-matchit')
 call minpac#add('dbakker/vim-projectroot')
 
+call minpac#add('tpope/vim-dispatch')
+call minpac#add('radenling/vim-dispatch-neovim')
+
 call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
 set rtp+=/usr/local/opt/fzf
