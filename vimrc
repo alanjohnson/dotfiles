@@ -38,6 +38,7 @@ call minpac#add('adelarsq/vim-matchit')
 call minpac#add('dbakker/vim-projectroot')
 
 call minpac#add('junegunn/fzf')
+call minpac#add('junegunn/fzf.vim')
 set rtp+=/usr/local/opt/fzf
 nnoremap <C-f> :<C-u>FZF<CR>
 
