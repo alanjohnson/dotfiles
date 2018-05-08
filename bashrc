@@ -45,3 +45,4 @@ export PATH=$PATH:$(brew --prefix mysql)/bin #Homebrew path
 # fix bundle exe is not install error on some git repos
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+PATH=$PATH:$VIMCONFIG/pack/bundle/start/fzf/bin #Add FzF to path

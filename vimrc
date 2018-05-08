@@ -35,8 +35,13 @@ call minpac#add('lilydjwg/colorizer')
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('ericbn/vim-solarized')
 call minpac#add('adelarsq/vim-matchit')
-call minpac#add('wincent/command-t')
 call minpac#add('dbakker/vim-projectroot')
+
+call minpac#add('junegunn/fzf')
+set rtp+=/usr/local/opt/fzf
+nnoremap <C-f> :<C-u>FZF<CR>
+
+command! UpdatePacks call minpac#update()
 "---------------------- END ----------------------"
 
 " NERD Tree
@@ -294,8 +299,6 @@ noremap <S-k> <C-b>
 " shift left/right is word left/right
 noremap <S-h> b
 noremap <S-l> w
-" Fuzzy Finder file mode
-map <C-f> :FufFile <CR>
 imap ;; <Esc>
 
 " Easier split navigation - Use ctrl-[hjkl] to select the active split
