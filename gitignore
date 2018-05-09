@@ -4,4 +4,3 @@ better_errors.rb
 *.orig
 .ruby-gemset
 .env
-.projections.json
