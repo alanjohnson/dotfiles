@@ -153,10 +153,16 @@ let g:grepper.next_tool     = '<leader>g'
 let g:grepper.simple_prompt = 1
 let g:grepper.quickfix      = 0
 " Search for the current word
-nnoremap <leader>* :Grepper -tool ag -cword -noprompt<cr>
-nnoremap <leader>g :Grepper -tool git<cr>
-nnoremap <leader>G :Grepper -tool ag<cr>
-nnoremap <leader>g :Grepper -tool git -noopen -jump<cr>
+nnoremap <leader>* :Grepper -tool grep -cword -noprompt<cr>
+nnoremap <leader>a :Grepper -tool ack<cr>
+nnoremap <leader>g :Grepper -tool grep<cr>
+nnoremap <leader>G :Grepper -tool git<cr>
+" I use Ack a lot, the Cap A always gets me, so I'm using a leader key remap instead.  This maps LeaderKey+a to :Ack -a
+" Also uses project Root plugin to search from root of current project
+"nnoremap <leader>a :ProjectRootExe Ack<Space>
+" I also use Ag (Silver Surfer)
+"nnoremap <leader>A :ProjectRootExe Ag<Space>
+
 "Search for the current selection
 nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)
@@ -357,13 +363,6 @@ nmap <silent> <c-s-l> <C-W>l
 " alt+arrow to move between tabs
 map <A-left> :tabp<CR>
 map <A-right> :tabn<CR>
-
-" I use Ack a lot, the Cap A always gets me, so I'm using a leader key remap instead.  This maps LeaderKey+a to :Ack -a
-" Also uses project Root plugin to search from root of current project
-nnoremap <leader>a :ProjectRootExe Ack<Space>
-
-" I also use Ag (Silver Surfer)
-nnoremap <leader>A :ProjectRootExe Ag<Space>
 "---------------------- END ----------------------"
 "
 "

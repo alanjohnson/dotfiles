@@ -20,7 +20,6 @@
     },
     "sourceType": "module"
   },
-
   "env": {
     "es6": true,
     "browser": false,
@@ -29,20 +28,16 @@
     "mocha": false,
     "jasmine": false,
     "phantomjs": false,
-    "jquery": false,
+    "jquery": true,
     "prototypejs": false,
     "shelljs": false
   },
-
   "globals": {
-
     "document": false,
     "navigator": false,
     "window": false
   },
-
   "plugins": [
-
     "import",
     "node",
     "promise",
@@ -50,8 +45,6 @@
   ],
 
   "rules": {
-
-
     "no-comma-dangle": 0,
     "no-cond-assign": 0,
     "no-console": 0,
@@ -68,19 +61,14 @@
     "no-func-assign": 0,
     "no-inner-declarations": 0,
     "no-invalid-regexp": 0,
-    "no-irregular-whitespace": 0,
     "no-negated-in-lhs": 0,
     "no-obj-calls": 0,
-    "no-regex-spaces": 0,
     "no-reserved-keys": 0,
     "no-sparse-arrays": 0,
     "no-unreachable": 0,
     "use-isnan": 0,
     "valid-jsdoc": 0,
     "valid-typeof": 0,
-
-
-
 
     "block-scoped-var": 0,
     "complexity": 0,
@@ -106,7 +94,6 @@
     "no-labels": 0,
     "no-lone-blocks": 0,
     "no-loop-func": 0,
-    "no-multi-spaces": 0,
     "no-multi-str": 0,
     "no-native-reassign": 0,
     "no-new": 0,
@@ -130,15 +117,9 @@
     "wrap-iife": 0,
     "yoda": 0,
 
-
-
-
     "global-strict": 0,
     "no-extra-strict": 0,
     "strict": 0,
-
-
-
 
     "no-catch-shadow": 0,
     "no-delete-var": 0,
@@ -151,9 +132,6 @@
     "no-unused-vars": 0,
     "no-use-before-define": 0,
 
-
-
-
     "handle-callback-err": 0,
     "no-mixed-requires": 0,
     "no-new-require": 0,
@@ -161,9 +139,6 @@
     "no-process-exit": 0,
     "no-restricted-modules": 0,
     "no-sync": 0,
-
-
-
 
     "brace-style": 0,
     "camelcase": 0,
@@ -180,14 +155,10 @@
     "no-array-constructor": 0,
     "no-inline-comments": 0,
     "no-lonely-if": 0,
-    "no-mixed-spaces-and-tabs": 0,
     "no-multiple-empty-lines": 0,
     "no-nested-ternary": 0,
     "no-new-object": 0,
-    "no-space-before-semi": 0,
-    "no-spaced-func": 0,
     "no-ternary": 0,
-    "no-trailing-spaces": 0,
     "no-underscore-dangle": 0,
     "no-wrap-func": 0,
     "one-var": 0,
@@ -197,6 +168,14 @@
     "quotes": 0,
     "semi": 0,
     "sort-vars": 0,
+
+    "no-whitespace-before-property": "error",
+    "no-spaced-func": 0,
+    "no-trailing-spaces": 1,
+    "no-mixed-spaces-and-tabs": 1,
+    "no-multi-spaces": 0,
+    "no-irregular-whitespace": 1,
+    "no-regex-spaces": 1,
     "space-after-function-name": 0,
     "space-after-keywords": 0,
     "space-before-blocks": 0,
@@ -204,18 +183,16 @@
     "space-in-parens": 0,
     "space-infix-ops": 0,
     "space-return-throw-case": 0,
-    "space-unary-ops": 0,
-    "spaced-line-comment": 0,
+    "space-unary-ops": ["error", { "words": true, "nonwords": false }],
+    "space-before-function-paren": ["error", "always"],
+    "spaced-comment": ["error", "always", {
+      "line": { "markers": ["*package", "!", "/", ",", "="] },
+      "block": { "balanced": true, "markers": ["*package", "!", ",", ":", "::", "flow-include"], "exceptions": ["*"] }
+    }],
+
     "wrap-regex": 0,
-
-
-
-
     "no-var": 0,
     "generator-star": 0,
-
-
-
 
     "max-depth": 0,
     "max-len": 0,
@@ -301,7 +278,6 @@
     "no-implied-eval": "error",
     "no-inner-declarations": ["error", "functions"],
     "no-invalid-regexp": "error",
-    "no-irregular-whitespace": "error",
     "no-iterator": "error",
     "no-label-var": "error",
     "no-labels": ["error", { "allowLoop": false, "allowSwitch": false }],
@@ -314,8 +290,6 @@
       ],
       "allowSamePrecedence": true
     }],
-    "no-mixed-spaces-and-tabs": "error",
-    "no-multi-spaces": "error",
     "no-multi-str": "error",
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
     "no-negated-in-lhs": "error",
@@ -331,7 +305,6 @@
     "no-path-concat": "error",
     "no-proto": "error",
     "no-redeclare": "error",
-    "no-regex-spaces": "error",
     "no-return-assign": ["error", "except-parens"],
     "no-return-await": "error",
     "no-self-assign": "error",
@@ -343,7 +316,6 @@
     "no-template-curly-in-string": "error",
     "no-this-before-super": "error",
     "no-throw-literal": "error",
-    "no-trailing-spaces": "error",
     "no-undef": "error",
     "no-undef-init": "error",
     "no-unexpected-multiline": "error",
@@ -361,7 +333,6 @@
     "no-useless-escape": "error",
     "no-useless-rename": "error",
     "no-useless-return": "error",
-    "no-whitespace-before-property": "error",
     "no-with": "error",
     "object-property-newline": ["error", { "allowMultiplePropertiesPerLine": true }],
     "one-var": ["error", { "initialized": "never" }],
@@ -370,17 +341,7 @@
     "prefer-promise-reject-errors": "error",
     "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
     "rest-spread-spacing": ["error", "never"],
-    "semi": ["error", "never"],
     "semi-spacing": ["error", { "before": false, "after": true }],
-    "space-before-blocks": ["error", "always"],
-    "space-before-function-paren": ["error", "always"],
-    "space-in-parens": ["error", "never"],
-    "space-infix-ops": "error",
-    "space-unary-ops": ["error", { "words": true, "nonwords": false }],
-    "spaced-comment": ["error", "always", {
-      "line": { "markers": ["*package", "!", "/", ",", "="] },
-      "block": { "balanced": true, "markers": ["*package", "!", ",", ":", "::", "flow-include"], "exceptions": ["*"] }
-    }],
     "symbol-description": "error",
     "template-curly-spacing": ["error", "never"],
     "template-tag-spacing": ["error", "never"],
