@@ -29,15 +29,18 @@ call minpac#add('tpope/vim-unimpaired')
 call minpac#add('scrooloose/nerdtree')
 call minpac#add('tpope/vim-rails')
 call minpac#add('tpope/vim-projectionist')
-call minpac#add('mileszs/ack.vim')
 call minpac#add('severin-lemaignan/vim-minimap')
-call minpac#add('rking/ag.vim')
 call minpac#add('lilydjwg/colorizer')
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('ericbn/vim-solarized')
 call minpac#add('adelarsq/vim-matchit')
 call minpac#add('dbakker/vim-projectroot')
 call minpac#add('w0rp/ale')
+call minpac#add('mhinz/vim-grepper')
+"call minpac#add('rking/ag.vim')
+"call minpac#add('mileszs/ack.vim')
+
+
 
 call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
@@ -140,6 +143,24 @@ if has('statusline')
   "Status line gnarliness
   "set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 endif
+"---------------------- END ----------------------"
+"
+"------------------- Grepper --------------------"
+let g:grepper       = {}
+let g:grepper.tools = ['grep', 'git', 'rg', 'ack']
+let g:grepper.jump          = 1
+let g:grepper.next_tool     = '<leader>g'
+let g:grepper.simple_prompt = 1
+let g:grepper.quickfix      = 0
+" Search for the current word
+nnoremap <leader>* :Grepper -tool ag -cword -noprompt<cr>
+nnoremap <leader>g :Grepper -tool git<cr>
+nnoremap <leader>G :Grepper -tool ag<cr>
+nnoremap <leader>g :Grepper -tool git -noopen -jump<cr>
+"Search for the current selection
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
+command! Todo :Grepper -tool git -query '\(TODO\|FIXME\)'
 "---------------------- END ----------------------"
 "
 "--------------- Linting Behavior ----------------"
