@@ -116,14 +116,26 @@ if has('syntax')
         set t_Co=256              " add the 256 color setting
     endif
 
-    if &t_Co == 256
-        colorscheme twilight256
-        "colorscheme solarized      " load a colorscheme
-    else
-        colorscheme twilight
-        "colorscheme solarized      " load a colorscheme
-    endif
+   " if &t_Co == 256
+   "     colorscheme twilight256
+   "     "colorscheme solarized      " load a colorscheme
+   " else
+   "     colorscheme twilight
+   "     "colorscheme solarized      " load a colorscheme
+   " endif
 endif
+
+"colorscheme twilight
+"colorscheme twilight2
+"colorscheme neodark
+"let g:neodark#background = '#131313'
+"let g:neodark#use_256color = 1 " default: 0
+
+let g:gruvbox_contrast_dark = "hard"
+set t_Co=256
+set background=dark
+colorscheme gruvbox
+highlight Normal ctermbg=NONE
 
 if has('statusline')
   "set laststatus=2                  " Always show statusline, even if only 1 window.
