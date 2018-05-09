@@ -37,9 +37,7 @@ call minpac#add('itchyny/lightline.vim')
 call minpac#add('ericbn/vim-solarized')
 call minpac#add('adelarsq/vim-matchit')
 call minpac#add('dbakker/vim-projectroot')
-
-call minpac#add('tpope/vim-dispatch')
-call minpac#add('radenling/vim-dispatch-neovim')
+call minpac#add('w0rp/ale')
 
 call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
@@ -144,7 +142,19 @@ if has('statusline')
 endif
 "---------------------- END ----------------------"
 "
-"
+"--------------- Linting Behavior ----------------"
+" For JavaScript files, use `eslint` (and only eslint)
+" ale_linters seting - ALE will perform linting with the eslint tool
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\ }
+" Mappings in the style of unimpaired-next
+nmap <silent> [W <Plug>(ale_first)
+nmap <silent> [w <Plug>(ale_previous)
+nmap <silent> ]w <Plug>(ale_next)
+nmap <silent> ]W <Plug>(ale_last)
+"---------------------- END ----------------------"
 "
 "------ Text editing and searching behavior ------"
 set whichwrap=b,s,h,l,<,>,[,]     " backspace and cursor keys can wrap to lines
