@@ -35,6 +35,7 @@ call minpac#add('itchyny/lightline.vim')
 call minpac#add('ericbn/vim-solarized')
 call minpac#add('adelarsq/vim-matchit')
 call minpac#add('w0rp/ale')
+call minpac#add('ludovicchabant/vim-gutentags')
 
 "call minpac#add('dbakker/vim-projectroot')
 call minpac#add('airblade/vim-rooter')
