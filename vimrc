@@ -34,12 +34,12 @@ call minpac#add('lilydjwg/colorizer')
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('ericbn/vim-solarized')
 call minpac#add('adelarsq/vim-matchit')
-call minpac#add('dbakker/vim-projectroot')
+"call minpac#add('dbakker/vim-projectroot')
 call minpac#add('w0rp/ale')
 call minpac#add('mhinz/vim-grepper')
 "call minpac#add('rking/ag.vim')
 "call minpac#add('mileszs/ack.vim')
-
+call minpac#add('airblade/vim-rooter')
 
 
 call minpac#add('junegunn/fzf')
