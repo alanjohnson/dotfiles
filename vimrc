@@ -38,6 +38,10 @@ call minpac#add('ericbn/vim-solarized')
 call minpac#add('adelarsq/vim-matchit')
 call minpac#add('dbakker/vim-projectroot')
 call minpac#add('w0rp/ale')
+call minpac#add('airblade/vim-rooter')
+"autocmd BufEnter * :Rooter
+let g:rooter_silent_chdir = 1
+let g:rooter_resolve_links = 1
 
 call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
