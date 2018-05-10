@@ -4,3 +4,4 @@ better_errors.rb
 *.orig
 .ruby-gemset
 .env
+tags
