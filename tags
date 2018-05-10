@@ -264,6 +264,8 @@ $TMPDIR	vim/pack/minpac/start/ale/test/vimrc	/^let $TMPDIR = ''$/;"	v
 :ALEInfo	vim/pack/minpac/start/ale/ISSUE_TEMPLATE.md	/^### :ALEInfo$/;"	S
 ;;	vimrc	/^imap ;; <Esc>$/;"	m
 <	vimrc	/^vnoremap < <gv$/;"	m
+<2-LeftMouse>	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^    inoremap <script> <silent> <buffer> <2-LeftMouse>$/;"	m
+<2-LeftMouse>	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^    nnoremap <script> <silent> <buffer> <2-LeftMouse>$/;"	m
 <A-left>	vimrc	/^map <A-left> :tabp<CR>$/;"	m
 <A-right>	vimrc	/^map <A-right> :tabn<CR>$/;"	m
 <C-R><C-F>	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^    cmap <buffer>         <C-R><C-F> <Plug><cfile>$/;"	m
@@ -277,6 +279,8 @@ $TMPDIR	vim/pack/minpac/start/ale/test/vimrc	/^let $TMPDIR = ''$/;"	v
 <F2>	vimrc	/^map <F2> :NERDTreeToggle<CR>:NERDTreeMirror<CR>$/;"	m
 <F4>	vimrc	/^map <F4> :execute "noautocmd vimgrep \/" . expand("<cword>") . "\/j **" <Bar> cw<CR>$/;"	m
 <Leader>tc	vim/pack/minpac/start/colorizer/plugin/colorizer.vim	/^  nmap <unique> <Leader>tc <Plug>Colorizer$/;"	m
+<LeftRelease>	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^    inoremap <script> <silent> <buffer> <LeftRelease>$/;"	m
+<LeftRelease>	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^    nnoremap <script> <silent> <buffer> <LeftRelease>$/;"	m
 <Plug>(-fzf-complete-trigger)	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^inoremap <silent> <Plug>(-fzf-complete-trigger) <c-o>:call <sid>complete_trigger()<cr>$/;"	m
 <Plug>(ale_detail)	vim/pack/minpac/start/ale/plugin/ale.vim	/^nnoremap <silent> <Plug>(ale_detail) :ALEDetail<Return>$/;"	m
 <Plug>(ale_disable)	vim/pack/minpac/start/ale/plugin/ale.vim	/^nnoremap <silent> <Plug>(ale_disable) :ALEDisable<Return>$/;"	m
@@ -350,7 +354,7 @@ $TMPDIR	vim/pack/minpac/start/ale/test/vimrc	/^let $TMPDIR = ''$/;"	v
 <leader>g	vimrc	/^nnoremap <leader>g :Grepper -tool grep<cr>$/;"	m
 <leader>nt	vimrc	/^nmap <leader>nt :NERDTreeFind<CR>$/;"	m
 <leader>rv	vimrc	/^nmap <silent> <leader>rv :so $MYVIMRC<CR>   "reloads the .vimrc file$/;"	m
-<leader>y	vimrc	/^map <silent><leader>y :TagbarToggle<CR>                " Display panel with y (or ,y)$/;"	m
+<leader>t	vimrc	/^map <silent><leader>t :TagbarToggle<CR>                " Display panel with y (or ,y)$/;"	m
 <plug>(-fzf-vim-do)	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^nnoremap <plug>(-fzf-vim-do) :execute g:__fzf_command<cr>$/;"	m
 <plug>(GrepperOperator)	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^nnoremap <silent> <plug>(GrepperOperator) :set opfunc=<sid>operator<cr>g@$/;"	m
 <plug>(GrepperOperator)	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^xnoremap <silent> <plug>(GrepperOperator) :<c-u>call <sid>operator(visualmode())<cr>$/;"	m
@@ -685,6 +689,7 @@ Del	vim/pack/minpac/start/fzf/src/tui/tui.go	/^	Del$/;"	c	package:tui
 Delimiter	vim/pack/minpac/start/fzf/src/options.go	/^	Delimiter   Delimiter$/;"	m	struct:fzf.Options
 Delimiter	vim/pack/minpac/start/fzf/src/tokenizer.go	/^type Delimiter struct {$/;"	s	package:fzf
 Demo	vim/pack/minpac/start/vim-grepper/README.md	/^## Demo$/;"	s
+Dependencies	vim/pack/minpac/start/tagbar/README.md	/^## Dependencies$/;"	s
 Destroy	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=*       -complete=customlist,s:Complete_destroy  Destroy       :e/;"	c
 Dim	vim/pack/minpac/start/fzf/src/tui/dummy.go	/^	Dim              = Attr(1 << 1)$/;"	c	package:tui
 Dim	vim/pack/minpac/start/fzf/src/tui/tcell.go	/^	Dim            = Attr(tcell.AttrDim)$/;"	c	package:tui
@@ -886,6 +891,7 @@ Installation	vim/pack/minpac/start/fzf.vim/README.md	/^Installation$/;"	s
 Installation	vim/pack/minpac/start/fzf/README.md	/^Installation$/;"	s
 Installation	vim/pack/minpac/start/lightline.vim/README.md	/^## Installation$/;"	s
 Installation	vim/pack/minpac/start/nerdtree/README.markdown	/^Installation$/;"	s
+Installation	vim/pack/minpac/start/tagbar/README.md	/^## Installation$/;"	s
 Installation	vim/pack/minpac/start/vim-grepper/README.md	/^## Installation$/;"	s
 Installation	vim/pack/minpac/start/vim-minimap/README.md	/^Installation$/;"	s
 Installation	vim/pack/minpac/start/vim-minimap/autoload/drawille/README.md	/^### Installation$/;"	S
@@ -944,6 +950,7 @@ License	vim/pack/minpac/opt/vim-scriptease/README.markdown	/^## License$/;"	s
 License	vim/pack/minpac/start/fzf.vim/README.md	/^License$/;"	s
 License	vim/pack/minpac/start/fzf/BUILD.md	/^License$/;"	s
 License	vim/pack/minpac/start/lightline.vim/README.md	/^## License$/;"	s
+License	vim/pack/minpac/start/tagbar/README.md	/^## License$/;"	s
 License	vim/pack/minpac/start/vim-projectionist/README.markdown	/^## License$/;"	s
 License	vim/pack/minpac/start/vim-rails/README.markdown	/^## License$/;"	s
 License	vim/pack/minpac/start/vim-solarized/README.md	/^## License$/;"	s
@@ -962,6 +969,7 @@ LoopParseArgs	vim/pack/minpac/start/vim-gutentags/plat/win32/update_scopedb.cmd	
 LoopParseArgs	vim/pack/minpac/start/vim-gutentags/plat/win32/update_tags.cmd	/^:LoopParseArgs$/;"	l
 MAKEFILE	vim/pack/minpac/start/fzf/Makefile	/^MAKEFILE    := $(realpath $(lastword $(MAKEFILE_LIST)))$/;"	m
 MINIMAP	vim/pack/minpac/start/vim-minimap/autoload/minimap.py	/^MINIMAP = "vim-minimap"$/;"	v
+Maintainer	vim/pack/minpac/start/tagbar/README.md	/^## Maintainer$/;"	s
 Make release archives for all supported platforms in target	vim/pack/minpac/start/fzf/BUILD.md	/^# Make release archives for all supported platforms in target$/;"	c
 MakeSlab	vim/pack/minpac/start/fzf/src/util/slab.go	/^func MakeSlab(size16 int, size32 int) *Slab {$/;"	f	package:util
 Mappings	vim/pack/minpac/start/fzf.vim/README.md	/^Mappings$/;"	s
@@ -1072,6 +1080,7 @@ NilClass	vim/pack/minpac/start/fzf/test/test_go.rb	/^class NilClass$/;"	c
 Normalize	vim/pack/minpac/start/fzf/src/options.go	/^	Normalize   bool$/;"	m	struct:fzf.Options
 NormalizeRunes	vim/pack/minpac/start/fzf/src/algo/normalize.go	/^func NormalizeRunes(runes []rune) []rune {$/;"	f	package:algo
 Note for developers of other plugins	vim/pack/minpac/start/lightline.vim/README.md	/^## Note for developers of other plugins$/;"	s
+Note: If the file structure display is wrong	vim/pack/minpac/start/tagbar/README.md	/^## Note: If the file structure display is wrong$/;"	s
 Now fzf (w/o pipe) will use fd instead of find	vim/pack/minpac/start/fzf/README.md	/^# Now fzf (w\/o pipe) will use fd instead of find$/;"	c
 Nth	vim/pack/minpac/start/fzf/src/options.go	/^	Nth         []Range$/;"	m	struct:fzf.Options
 O	vim/pack/minpac/start/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> O <NOP>$/;"	m
@@ -1140,6 +1149,7 @@ Pros	vim/pack/minpac/start/fzf/README.md	/^Pros$/;"	s
 Push	vim/pack/minpac/start/fzf/src/chunklist.go	/^func (cl *ChunkList) Push(data []byte) bool {$/;"	f	unknown:fzf.ChunkList
 Pushing	vim/pack/minpac/start/vim-gutentags/CONTRIBUTING.md	/^## Pushing$/;"	s
 Query	vim/pack/minpac/start/fzf/src/options.go	/^	Query       string$/;"	m	struct:fzf.Options
+Quickstart	vim/pack/minpac/start/tagbar/README.md	/^## Quickstart$/;"	s
 R	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=* -range=0 -complete=customlist,s:Complete_related   R   exe   s:/;"	c
 R	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^  nnoremap <buffer> <silent> R :<C-U>call <SID>reload_log()<CR>$/;"	m
 RD	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^  command! -buffer -bar -nargs=* -range=0 -complete=customlist,s:Complete_edit      RD  exe   s:/;"	c
@@ -1230,6 +1240,7 @@ SYNOPSIS	vim/pack/minpac/start/fzf/man/man1/fzf.1	/^.SH SYNOPSIS$/;"	s	title:fzf
 Sample .vimrc	vim/pack/minpac/opt/minpac/README.md	/^### Sample .vimrc$/;"	S
 Score	vim/pack/minpac/start/fzf/src/algo/algo.go	/^	Score int$/;"	m	struct:algo.Result
 Screenshot(s)	vim/pack/minpac/start/nerdtree/.github/ISSUE_TEMPLATE.md	/^### Screenshot(s)$/;"	S
+Screenshots	vim/pack/minpac/start/tagbar/README.md	/^## Screenshots$/;"	s
 Scriptnames	vim/pack/minpac/opt/vim-scriptease/plugin/scriptease.vim	/^command! -bar -count=0 Scriptnames$/;"	c
 Search	vim/pack/minpac/start/fzf/src/cache.go	/^func (cc *ChunkCache) Search(chunk *Chunk, key string) []Result {$/;"	f	unknown:fzf.ChunkCache
 Search syntax	vim/pack/minpac/start/fzf/README.md	/^#### Search syntax$/;"	t
@@ -1266,6 +1277,7 @@ String	vim/pack/minpac/start/fzf/src/tokenizer.go	/^func (t Token) String() stri
 String	vim/pack/minpac/start/fzf/src/util/chars.go	/^func (chars *Chars) String() string {$/;"	f	unknown:util.Chars
 Style	vim/pack/minpac/start/fzf/src/tui/tcell.go	/^func (c Color) Style() tcell.Color {$/;"	f	unknown:tui.Color
 SuffixMatch	vim/pack/minpac/start/fzf/src/algo/algo.go	/^func SuffixMatch(caseSensitive bool, normalize bool, forward bool, text *util.Chars, pattern []r/;"	f	package:algo
+Support for additional filetypes	vim/pack/minpac/start/tagbar/README.md	/^## Support for additional filetypes$/;"	s
 Supported commands	vim/pack/minpac/start/fzf/README.md	/^#### Supported commands$/;"	t
 Swap	vim/pack/minpac/start/fzf/src/result.go	/^func (a ByOrder) Swap(i, j int) {$/;"	f	unknown:fzf.ByOrder
 Swap	vim/pack/minpac/start/fzf/src/result.go	/^func (a ByRelevance) Swap(i, j int) {$/;"	f	unknown:fzf.ByRelevance
@@ -1280,6 +1292,22 @@ Table of Contents	vim/pack/minpac/start/ale/README.md	/^## Table of Contents$/;"
 Table of Contents	vim/pack/minpac/start/fzf/README.md	/^Table of Contents$/;"	s
 Tabstop	vim/pack/minpac/start/fzf/src/options.go	/^	Tabstop     int$/;"	m	struct:fzf.Options
 Tac	vim/pack/minpac/start/fzf/src/options.go	/^	Tac         bool$/;"	m	struct:fzf.Options
+Tagbar	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=0 Tagbar              call tagbar#ToggleWindow()$/;"	c
+Tagbar: a class outline viewer for Vim	vim/pack/minpac/start/tagbar/README.md	/^# Tagbar: a class outline viewer for Vim$/;"	c
+TagbarAutoCmds	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^    augroup TagbarAutoCmds$/;"	a
+TagbarBalloonExpr	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! TagbarBalloonExpr() abort$/;"	f
+TagbarClose	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=0 TagbarClose         call tagbar#CloseWindow()$/;"	c
+TagbarCurrentTag	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=? TagbarCurrentTag    echo tagbar#currenttag('%s', 'No current tag', <f-args>)$/;"	c
+TagbarDebug	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=? TagbarDebug         call tagbar#debug#start_debug(<f-args>)$/;"	c
+TagbarDebugEnd	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=0 TagbarDebugEnd      call tagbar#debug#stop_debug()$/;"	c
+TagbarGetTypeConfig	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=1 TagbarGetTypeConfig call tagbar#gettypeconfig(<f-args>)$/;"	c
+TagbarOpen	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=? TagbarOpen          call tagbar#OpenWindow(<f-args>)$/;"	c
+TagbarOpenAutoClose	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=0 TagbarOpenAutoClose call tagbar#OpenWindow('fcj')$/;"	c
+TagbarSession	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^augroup TagbarSession$/;"	a
+TagbarSetFoldlevel	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=1 -bang TagbarSetFoldlevel  call tagbar#SetFoldLevel(<args>, <bang>0)$/;"	c
+TagbarShowTag	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=0 TagbarShowTag       call tagbar#highlighttag(1, 1)$/;"	c
+TagbarToggle	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=0 TagbarToggle        call tagbar#ToggleWindow()$/;"	c
+TagbarTogglePause	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^command! -nargs=0 TagbarTogglePause   call tagbar#toggle_pause()$/;"	c
 TcellWindow	vim/pack/minpac/start/fzf/src/tui/tcell.go	/^type TcellWindow struct {$/;"	s	package:tui
 TearDown	vim/pack/minpac/start/vim-rooter/test/test_rooter.vim	/^function TearDown()$/;"	f
 Terminal	vim/pack/minpac/start/fzf/src/terminal.go	/^type Terminal struct {$/;"	s	package:fzf
@@ -1455,6 +1483,8 @@ WIDTH	vim/pack/minpac/start/vim-minimap/autoload/minimap.py	/^WIDTH = 20$/;"	v
 Wait	vim/pack/minpac/start/fzf/src/util/eventbox.go	/^func (b *EventBox) Wait(callback func(*Events)) {$/;"	f	unknown:util.EventBox
 WaitFor	vim/pack/minpac/start/fzf/src/util/eventbox.go	/^func (b *EventBox) WaitFor(event EventType) {$/;"	f	unknown:util.EventBox
 Watch	vim/pack/minpac/start/fzf/src/util/eventbox.go	/^func (b *EventBox) Watch(events ...EventType) {$/;"	f	unknown:util.EventBox
+What Tagbar is	vim/pack/minpac/start/tagbar/README.md	/^## What Tagbar is$/;"	s
+What Tagbar is not	vim/pack/minpac/start/tagbar/README.md	/^## What Tagbar is not$/;"	s
 What went wrong	vim/pack/minpac/start/ale/ISSUE_TEMPLATE.md	/^## What went wrong$/;"	s
 What?	vim/pack/minpac/start/vim-gutentags/README.md	/^## What?$/;"	s
 Why yet another clone of powerline?	vim/pack/minpac/start/lightline.vim/README.md	/^## Why yet another clone of powerline?$/;"	s
@@ -2478,6 +2508,7 @@ awkTokenizer	vim/pack/minpac/start/fzf/src/tokenizer.go	/^func awkTokenizer(inpu
 awkWhite	vim/pack/minpac/start/fzf/src/tokenizer.go	/^	awkWhite$/;"	c	package:fzf
 b:current_syntax	vim/pack/minpac/start/ale/syntax/ale-fix-suggest.vim	/^let b:current_syntax = 'ale-fix-suggest'$/;"	v
 b:current_syntax	vim/pack/minpac/start/ale/syntax/ale-preview-selection.vim	/^let b:current_syntax = 'ale-preview-selection'$/;"	v
+b:current_syntax	vim/pack/minpac/start/tagbar/syntax/tagbar.vim	/^let b:current_syntax = "tagbar"$/;"	v
 b:match_ignorecase	vimrc	/^let b:match_ignorecase = 1$/;"	v
 back	vim/pack/minpac/start/vim-minimap/autoload/drawille/drawille.py	/^    def back(self, step):$/;"	m	class:Turtle
 balanced	eslintrc.json	/^      "block": { "balanced": true, "markers": ["*package", "!", ",", ":", "::", "flow-include"],/;"	b	object:rules.spaced-comment.2.block
@@ -3208,6 +3239,7 @@ g:loaded_projectionist	vim/pack/minpac/start/vim-projectionist/plugin/projection
 g:loaded_rails	vim/pack/minpac/start/vim-rails/plugin/rails.vim	/^let g:loaded_rails = 1$/;"	v
 g:loaded_rooter	vim/pack/minpac/start/vim-rooter/plugin/rooter.vim	/^let g:loaded_rooter = 1$/;"	v
 g:loaded_scriptease	vim/pack/minpac/opt/vim-scriptease/plugin/scriptease.vim	/^let g:loaded_scriptease = 1$/;"	v
+g:loaded_tagbar	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let g:loaded_tagbar = 1$/;"	v
 g:loaded_unimpaired	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^let g:loaded_unimpaired = 1$/;"	v
 g:mapleader	vim/pack/minpac/start/ale/test/.config/nvim/init.vim	/^let g:mapleader=','$/;"	v
 g:mapleader	vim/pack/minpac/start/ale/test/vimrc	/^let g:mapleader=','$/;"	v
@@ -3263,7 +3295,17 @@ g:rooter_targets	vim/pack/minpac/start/vim-rooter/test/test_rooter.vim	/^  let g
 g:rooter_targets	vim/pack/minpac/start/vim-rooter/test/test_rooter.vim	/^  let g:rooter_targets = s:targets$/;"	v
 g:rooter_use_lcd	vim/pack/minpac/start/vim-rooter/plugin/rooter.vim	/^  let g:rooter_use_lcd = 0$/;"	v
 g:showmarks_enable	vimrc	/^let g:showmarks_enable = 0$/;"	v
+g:tagbar#icon_closed	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let g:tagbar#icon_closed = g:tagbar_iconchars[0]$/;"	v
+g:tagbar#icon_open	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let g:tagbar#icon_open   = g:tagbar_iconchars[1]$/;"	v
+g:tagbar_autoclose	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^    let g:tagbar_autoclose = !g:tagbar_autoclose$/;"	v
+g:tagbar_case_insensitive	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^    let g:tagbar_case_insensitive = !g:tagbar_case_insensitive$/;"	v
+g:tagbar_ctags_bin	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^                let g:tagbar_ctags_bin = ctags$/;"	v
+g:tagbar_ctags_bin	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^        let g:tagbar_ctags_bin = expand(g:tagbar_ctags_bin)$/;"	v
 g:tagbar_ctags_bin	vimrc	/^let g:tagbar_ctags_bin='\/usr\/local\/bin\/ctags'  " Proper Ctags locations$/;"	v
+g:tagbar_hide_nonpublic	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^    let g:tagbar_hide_nonpublic = !g:tagbar_hide_nonpublic$/;"	v
+g:tagbar_iconchars	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^        let g:tagbar_iconchars = ['+', '-']$/;"	v
+g:tagbar_iconchars	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^        let g:tagbar_iconchars = ['▶', '▼']$/;"	v
+g:tagbar_sort	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^        let g:tagbar_sort = !g:tagbar_sort$/;"	v
 g:tagbar_width	vimrc	/^let g:tagbar_width=26                          " Default is 40, seems too wide$/;"	v
 g:terminal_color_0	vim/colors/OceanicNext.vim	/^let g:terminal_color_0=s:base00[0]$/;"	v
 g:terminal_color_0	vim/colors/OceanicNextLight.vim	/^let g:terminal_color_0=s:base00[0]$/;"	v
@@ -4139,6 +4181,7 @@ s:AddTabExpand	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:
 s:Alternate	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:Alternate(cmd,line1,line2,count,...) abort$/;"	f
 s:ApplyPartialTimer	vim/pack/minpac/start/ale/autoload/ale/util.vim	/^function! s:ApplyPartialTimer(timer_id) abort$/;"	f
 s:AssetEdit	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:AssetEdit(cmd, name, dir, suffix, fallbacks) abort$/;"	f
+s:AutoUpdate	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:AutoUpdate(fname, force, ...) abort$/;"	f
 s:BlankDown	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:BlankDown(count) abort$/;"	f
 s:BlankUp	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:BlankUp(count) abort$/;"	f
 s:Bookmark	vim/pack/minpac/start/nerdtree/lib/nerdtree/bookmark.vim	/^let s:Bookmark = {}$/;"	v
@@ -4183,14 +4226,21 @@ s:COMPLETION_TRIGGER_CHARACTER	vim/pack/minpac/start/ale/autoload/ale/lsp/messag
 s:COMPLETION_TRIGGER_INVOKED	vim/pack/minpac/start/ale/autoload/ale/lsp/message.vim	/^let s:COMPLETION_TRIGGER_INVOKED = 1$/;"	v
 s:ChangeDirectory	vim/pack/minpac/start/vim-rooter/plugin/rooter.vim	/^function! s:ChangeDirectory(directory)$/;"	f
 s:ChangeDirectoryForBuffer	vim/pack/minpac/start/vim-rooter/plugin/rooter.vim	/^function! s:ChangeDirectoryForBuffer()$/;"	f
+s:ChangeFoldLevel	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ChangeFoldLevel(diff, force) abort$/;"	f
 s:ChangeToRootDirectory	vim/pack/minpac/start/vim-rooter/plugin/rooter.vim	/^function! s:ChangeToRootDirectory()$/;"	f
+s:CheckExCtagsVersion	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:CheckExCtagsVersion(output) abort$/;"	f
+s:CheckFTCtags	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:CheckFTCtags(bin, ftype) abort$/;"	f
 s:CheckForBadConfig	vim/pack/minpac/start/ale/autoload/ale/handlers/eslint.vim	/^function! s:CheckForBadConfig(buffer, lines) abort$/;"	f
+s:CheckForExCtags	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:CheckForExCtags(silent) abort$/;"	f
+s:CheckMouseClick	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:CheckMouseClick() abort$/;"	f
 s:CheckWithLSP	vim/pack/minpac/start/ale/autoload/ale/engine.vim	/^function! s:CheckWithLSP(buffer, linter) abort$/;"	f
 s:Choose	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^fun! s:Choose(patterns, string, comma, branch, prefix, suffix, ...)$/;"	f
 s:CleanUp	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^fun! s:CleanUp(options, mode, startline, startcol, ...)$/;"	f
 s:CleanupEveryBuffer	vim/pack/minpac/start/ale/autoload/ale/toggle.vim	/^function! s:CleanupEveryBuffer() abort$/;"	f
 s:ClearMatches	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:ClearMatches() "{{{1$/;"	f
 s:Clog	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:Clog(bang, mods, arg) abort$/;"	f
+s:CloseFold	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:CloseFold() abort$/;"	f
+s:CloseWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:CloseWindow() abort$/;"	f
 s:CloseWindowIfNeeded	vim/pack/minpac/start/ale/autoload/ale/list.vim	/^function! s:CloseWindowIfNeeded(buffer) abort$/;"	f
 s:CmpPatterns	vim/pack/minpac/start/ale/autoload/ale/pattern_options.vim	/^function! s:CmpPatterns(left_item, right_item) abort$/;"	f
 s:ColorFinder	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^let s:ColorFinder = [function('s:HexCode'), function('s:RgbColor'), function('s:RgbaColor')]$/;"	v
@@ -4213,7 +4263,9 @@ s:Complete_server	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function!
 s:CompletionStillValid	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^function! s:CompletionStillValid(request_id) abort$/;"	f
 s:Context	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:Context(reverse) abort$/;"	f
 s:ContextMotion	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:ContextMotion(reverse) abort$/;"	f
+s:CorrectFocusOnStartup	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:CorrectFocusOnStartup() abort$/;"	f
 s:Count	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^fun! s:Count(string, pattern, ...)$/;"	f
+s:CreateAutocommands	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:CreateAutocommands() abort$/;"	f
 s:CreateCountDict	vim/pack/minpac/start/ale/autoload/ale/statusline.vim	/^function! s:CreateCountDict() abort$/;"	f
 s:CreateTSServerMessageData	vim/pack/minpac/start/ale/autoload/ale/lsp.vim	/^function! s:CreateTSServerMessageData(message) abort$/;"	f
 s:CreateTemporaryFileForJob	vim/pack/minpac/start/ale/autoload/ale/engine.vim	/^function! s:CreateTemporaryFileForJob(buffer, temporary_file) abort$/;"	f
@@ -4242,8 +4294,10 @@ s:Creator.createMirror	vim/pack/minpac/start/nerdtree/lib/nerdtree/creator.vim	/
 s:Creator.createTabTree	vim/pack/minpac/start/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.createTabTree(name)$/;"	f
 s:Creator.createWindowTree	vim/pack/minpac/start/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.createWindowTree(dir)$/;"	f
 s:Creator.toggleTabTree	vim/pack/minpac/start/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.toggleTabTree(dir)$/;"	f
+s:CtagsErrMsg	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:CtagsErrMsg(errmsg, infomsg, silent, ...) abort$/;"	f
 s:CursorMoved	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:CursorMoved() "{{{1$/;"	f
 s:CustomComplete	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:CustomComplete(A,L,P,cmd) abort$/;"	f
+s:DetectFiletype	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:DetectFiletype(bufnr) abort$/;"	f
 s:DisablePostamble	vim/pack/minpac/start/ale/autoload/ale/toggle.vim	/^function! s:DisablePostamble() abort$/;"	f
 s:Echo	vim/pack/minpac/start/ale/autoload/ale/debugging.vim	/^function! s:Echo(message) abort$/;"	f
 s:EchoCommand	vim/pack/minpac/start/ale/autoload/ale/debugging.vim	/^function! s:EchoCommand(item) abort$/;"	f
@@ -4254,9 +4308,12 @@ s:EchoImpl	vim/pack/minpac/start/ale/autoload/ale/cursor.vim	/^function! s:EchoI
 s:EchoLinterAliases	vim/pack/minpac/start/ale/autoload/ale/debugging.vim	/^function! s:EchoLinterAliases(all_linters) abort$/;"	f
 s:EchoLinterVariables	vim/pack/minpac/start/ale/autoload/ale/debugging.vim	/^function! s:EchoLinterVariables(variable_list) abort$/;"	f
 s:EnablePreamble	vim/pack/minpac/start/ale/autoload/ale/toggle.vim	/^function! s:EnablePreamble() abort$/;"	f
+s:EscapeCtagsCmd	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:EscapeCtagsCmd(ctags_bin, args, ...) abort$/;"	f
 s:Event	vim/pack/minpac/start/nerdtree/lib/nerdtree/event.vim	/^let s:Event = {}$/;"	v
 s:Event.New	vim/pack/minpac/start/nerdtree/lib/nerdtree/event.vim	/^function! s:Event.New(nerdtree, subject, action, params) abort$/;"	f
 s:ExecMove	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:ExecMove(cmd) abort$/;"	f
+s:ExecuteCtags	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ExecuteCtags(ctags_cmd) abort$/;"	f
+s:ExecuteCtagsOnFile	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ExecuteCtagsOnFile(fname, realfname, typeinfo) abort$/;"	f
 s:ExtraErrorMsg	vim/pack/minpac/start/ale/ale_linters/javascript/flow.vim	/^function! s:ExtraErrorMsg(current, new) abort$/;"	f
 s:Extract	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:Extract(bang, mods, ...) range abort$/;"	f
 s:FGforBG	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:FGforBG(bg) "{{{1$/;"	f
@@ -4292,17 +4349,27 @@ s:GetDetails	vim/pack/minpac/start/ale/ale_linters/javascript/flow.vim	/^functio
 s:GetDir	vim/pack/minpac/start/ale/ale_linters/python/mypy.vim	/^function! s:GetDir(buffer) abort$/;"	f
 s:GetEscapedExecutable	vim/pack/minpac/start/ale/ale_linters/erlang/syntaxerl.vim	/^function! s:GetEscapedExecutable(buffer) abort$/;"	f
 s:GetExecutable	vim/pack/minpac/start/ale/autoload/ale/handlers/sml.vim	/^function! s:GetExecutable(buffer, source) abort$/;"	f
+s:GetFileWinnr	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:GetFileWinnr(fileinfo) abort$/;"	f
 s:GetFiletypeValue	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^function! s:GetFiletypeValue(map, filetype) abort$/;"	f
 s:GetJSONLines	vim/pack/minpac/start/ale/ale_linters/javascript/flow.vim	/^function! s:GetJSONLines(lines) abort$/;"	f
 s:GetLSPCompletions	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^function! s:GetLSPCompletions(linter) abort$/;"	f
 s:GetLinterNames	vim/pack/minpac/start/ale/autoload/ale/linter.vim	/^function! s:GetLinterNames(original_filetype) abort$/;"	f
 s:GetLinterVariables	vim/pack/minpac/start/ale/autoload/ale/debugging.vim	/^function! s:GetLinterVariables(filetype, linter_names) abort$/;"	f
+s:GetNearbyTag	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:GetNearbyTag(all, forcecurrent, ...) abort$/;"	f
+s:GetSupportedFiletypes	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:GetSupportedFiletypes() abort$/;"	f
+s:GetTagInfo	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:GetTagInfo(linenr, ignorepseudo) abort$/;"	f
 s:GetWorkingDirectory	vim/pack/minpac/start/ale/ale_linters/cs/mcsc.vim	/^function! s:GetWorkingDirectory(buffer) abort$/;"	f
 s:GetXterm2rgbTable	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:GetXterm2rgbTable()$/;"	f
 s:GoToLSPDefinition	vim/pack/minpac/start/ale/autoload/ale/definition.vim	/^function! s:GoToLSPDefinition(linter, options) abort$/;"	f
+s:GotoFileWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:GotoFileWindow(fileinfo, ...) abort$/;"	f
+s:GotoNextFold	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:GotoNextFold() abort$/;"	f
+s:GotoNextToplevelTag	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:GotoNextToplevelTag(direction) abort$/;"	f
+s:GotoPrevFold	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:GotoPrevFold() abort$/;"	f
 s:GroupLoclistItems	vim/pack/minpac/start/ale/autoload/ale/sign.vim	/^function! s:GroupLoclistItems(buffer, loclist) abort$/;"	f
 s:HL	vim/colors/gruvbox.vim	/^function! s:HL(group, fg, ...)$/;"	f
 s:HSL2RGB	vim/colors/neodark.vim	/^function! s:HSL2RGB(HSL)$/;"	f
+s:HandleBufDelete	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:HandleBufDelete(bufname, bufnr) abort$/;"	f
+s:HandleBufWrite	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:HandleBufWrite(fname) abort$/;"	f
 s:HandleChannelMessage	vim/pack/minpac/start/ale/autoload/ale/lsp.vim	/^function! s:HandleChannelMessage(channel, message) abort$/;"	f
 s:HandleCommandMessage	vim/pack/minpac/start/ale/autoload/ale/lsp.vim	/^function! s:HandleCommandMessage(job_id, message) abort$/;"	f
 s:HandleExit	vim/pack/minpac/start/ale/autoload/ale/engine.vim	/^function! s:HandleExit(job_id, exit_code) abort$/;"	f
@@ -4310,11 +4377,17 @@ s:HandleExit	vim/pack/minpac/start/ale/autoload/ale/fix.vim	/^function! s:Handle
 s:HandleInitializeResponse	vim/pack/minpac/start/ale/autoload/ale/lsp.vim	/^function! s:HandleInitializeResponse(conn, response) abort$/;"	f
 s:HandleLSPDiagnostics	vim/pack/minpac/start/ale/autoload/ale/engine.vim	/^function! s:HandleLSPDiagnostics(conn_id, response) abort$/;"	f
 s:HandleLSPErrorMessage	vim/pack/minpac/start/ale/autoload/ale/engine.vim	/^function! s:HandleLSPErrorMessage(error_message) abort$/;"	f
+s:HandleOnlyWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:HandleOnlyWindow() abort$/;"	f
 s:HandleSyntaxError	vim/pack/minpac/start/ale/autoload/ale/handlers/ruby.vim	/^function! s:HandleSyntaxError(buffer, lines) abort$/;"	f
 s:HandleTSServerDiagnostics	vim/pack/minpac/start/ale/autoload/ale/engine.vim	/^function! s:HandleTSServerDiagnostics(response, error_type) abort$/;"	f
 s:HandleUnixFormat	vim/pack/minpac/start/ale/autoload/ale/handlers/unix.vim	/^function! s:HandleUnixFormat(buffer, lines, type) abort$/;"	f
+s:HasOpenFileWindows	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:HasOpenFileWindows() abort$/;"	f
 s:HexCode	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:HexCode(str, lineno) "{{{2$/;"	f
 s:Hexa2Rgba	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:Hexa2Rgba(hex,alpha) "{{{2$/;"	f
+s:HighlightTag	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:HighlightTag(openfolds, ...) abort$/;"	f
+s:Init	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:Init(silent) abort$/;"	f
+s:InitTypes	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:InitTypes() abort$/;"	f
+s:InitWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:InitWindow(autoclose) abort$/;"	f
 s:InsertRefs	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^fun! s:InsertRefs(groupBR, prefix, group, suffix, matchline)$/;"	f
 s:Invert	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:Invert(bang)$/;"	f
 s:InvokeChain	vim/pack/minpac/start/ale/autoload/ale/engine.vim	/^function! s:InvokeChain(buffer, linter, chain_index, input) abort$/;"	f
@@ -4323,6 +4396,8 @@ s:IsCallback	vim/pack/minpac/start/ale/autoload/ale/linter.vim	/^function! s:IsC
 s:IsDirectory	vim/pack/minpac/start/vim-rooter/plugin/rooter.vim	/^function! s:IsDirectory(pattern)$/;"	f
 s:IsGenericFixer	vim/pack/minpac/start/ale/autoload/ale/fix/registry.vim	/^function! s:IsGenericFixer(suggested_filetypes) abort$/;"	f
 s:IsHeaderFile	vim/pack/minpac/start/ale/autoload/ale/handlers/gcc.vim	/^function! s:IsHeaderFile(filename) abort$/;"	f
+s:IsValidFile	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:IsValidFile(fname, ftype) abort$/;"	f
+s:JumpToTag	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:JumpToTag(stay_in_tagbar) abort$/;"	f
 s:KeyMap	vim/pack/minpac/start/nerdtree/lib/nerdtree/key_map.vim	/^let s:KeyMap = {}$/;"	v
 s:KeyMap.Add	vim/pack/minpac/start/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.Add(keymap)$/;"	f
 s:KeyMap.All	vim/pack/minpac/start/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.All()$/;"	f
@@ -4355,8 +4430,10 @@ s:LSP_COMPLETION_VARIABLE_KIND	vim/pack/minpac/start/ale/autoload/ale/completion
 s:LanguageGetter	vim/pack/minpac/start/ale/autoload/ale/linter.vim	/^function! s:LanguageGetter(buffer) dict abort$/;"	f
 s:LintOnEnter	vim/pack/minpac/start/ale/autoload/ale/events.vim	/^function! s:LintOnEnter(buffer) abort$/;"	f
 s:LoadArgCount	vim/pack/minpac/start/ale/autoload/ale/util.vim	/^function! s:LoadArgCount(function) abort$/;"	f
+s:LoadUserTypeDefs	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:LoadUserTypeDefs(...) abort$/;"	f
 s:MAX_COL_SIZE	vim/pack/minpac/start/ale/autoload/ale/highlight.vim	/^let s:MAX_COL_SIZE = 1073741824 " pow(2, 30)$/;"	v
 s:MAX_POS_VALUES	vim/pack/minpac/start/ale/autoload/ale/highlight.vim	/^let s:MAX_POS_VALUES = 8$/;"	v
+s:MapKeys	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:MapKeys() abort$/;"	f
 s:MapNextFamily	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:MapNextFamily(map,cmd) abort$/;"	f
 s:MarkProjectAsInitialized	vim/pack/minpac/start/ale/autoload/ale/lsp.vim	/^function! s:MarkProjectAsInitialized(conn, project) abort$/;"	f
 s:Match_debug	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^fun! s:Match_debug()$/;"	f
@@ -4384,6 +4461,7 @@ s:MenuItem.enabled	vim/pack/minpac/start/nerdtree/lib/nerdtree/menu_item.vim	/^f
 s:MenuItem.execute	vim/pack/minpac/start/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.execute()$/;"	f
 s:MenuItem.isSeparator	vim/pack/minpac/start/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.isSeparator()$/;"	f
 s:MenuItem.isSubmenu	vim/pack/minpac/start/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.isSubmenu()$/;"	f
+s:MinimizeMaxFoldLevel	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:MinimizeMaxFoldLevel(fileinfo, tags) abort$/;"	f
 s:Move	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:Move(cmd, count, map) abort$/;"	f
 s:MoveSelectionDown	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:MoveSelectionDown(count) abort$/;"	f
 s:MoveSelectionUp	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:MoveSelectionUp(count) abort$/;"	f
@@ -4419,6 +4497,9 @@ s:Notifier.GetListenersForEvent	vim/pack/minpac/start/nerdtree/lib/nerdtree/noti
 s:Notifier.GetListenersMap	vim/pack/minpac/start/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.GetListenersMap()$/;"	f
 s:Notifier.NotifyListeners	vim/pack/minpac/start/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.NotifyListeners(event, path, nerdtree, params)$/;"	f
 s:Open	vim/pack/minpac/start/ale/autoload/ale/preview.vim	/^function! s:Open(open_in_tab) abort$/;"	f
+s:OpenFold	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:OpenFold() abort$/;"	f
+s:OpenParents	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:OpenParents(...) abort$/;"	f
+s:OpenWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:OpenWindow(flags) abort$/;"	f
 s:Opener	vim/pack/minpac/start/nerdtree/lib/nerdtree/opener.vim	/^let s:Opener = {}$/;"	v
 s:Opener.New	vim/pack/minpac/start/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener.New(path, opts)$/;"	f
 s:Opener._bufInWindows	vim/pack/minpac/start/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._bufInWindows(bnum)$/;"	f
@@ -4436,6 +4517,7 @@ s:Opener._reuseWindow	vim/pack/minpac/start/nerdtree/lib/nerdtree/opener.vim	/^f
 s:Opener._saveCursorPos	vim/pack/minpac/start/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._saveCursorPos()$/;"	f
 s:Opener.open	vim/pack/minpac/start/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener.open(target)$/;"	f
 s:ParseSkip	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^fun! s:ParseSkip(str)$/;"	f
+s:ParseTagline	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ParseTagline(part1, part2, typeinfo, fileinfo) abort$/;"	f
 s:ParseWords	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^fun! s:ParseWords(groups)$/;"	f
 s:Path	vim/pack/minpac/start/nerdtree/lib/nerdtree/path.vim	/^let s:Path = {}$/;"	v
 s:Path.AbsolutePathFor	vim/pack/minpac/start/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.AbsolutePathFor(pathStr)$/;"	f
@@ -4489,6 +4571,11 @@ s:Plog	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:Plog(ban
 s:PrepareWrappedCommand	vim/pack/minpac/start/ale/autoload/ale/job.vim	/^function! s:PrepareWrappedCommand(original_wrapper, command) abort$/;"	f
 s:Preview	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:Preview(bang, lnum, uri) abort$/;"	f
 s:PreviewColorInLine	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:PreviewColorInLine(where) "{{{1$/;"	f
+s:PrintHelp	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:PrintHelp() abort$/;"	f
+s:PrintKinds	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:PrintKinds(typeinfo, fileinfo) abort$/;"	f
+s:PrintTag	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:PrintTag(tag, depth, output, fileinfo, typeinfo) abort$/;"	f
+s:ProcessFile	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ProcessFile(fname, ftype) abort$/;"	f
+s:ProcessTag	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function s:ProcessTag(name, filename, pattern, fields, is_split, typeinfo, fileinfo) abort$/;"	f
 s:RGB2HSL	vim/colors/neodark.vim	/^function! s:RGB2HSL(RGB)$/;"	f
 s:RGB2hex	vim/colors/neodark.vim	/^function! s:RGB2hex(RGB)$/;"	f
 s:Rails	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:Rails(bang, count, arg) abort$/;"	f
@@ -4502,8 +4589,12 @@ s:RemoveProblemsForDisabledLinters	vim/pack/minpac/start/ale/autoload/ale/engine
 s:RemoveUnicodeQuotes	vim/pack/minpac/start/ale/autoload/ale/handlers/flawfinder.vim	/^function! s:RemoveUnicodeQuotes(text) abort$/;"	f
 s:RemoveUnicodeQuotes	vim/pack/minpac/start/ale/autoload/ale/handlers/gcc.vim	/^function! s:RemoveUnicodeQuotes(text) abort$/;"	f
 s:RemoveUnicodeQuotes	vim/pack/minpac/start/ale/autoload/ale/handlers/pony.vim	/^function! s:RemoveUnicodeQuotes(text) abort$/;"	f
+s:RenderContent	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:RenderContent(...) abort$/;"	f
+s:RenderKeepView	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:RenderKeepView(...) abort$/;"	f
+s:ReopenWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ReopenWindow(delbufname) abort$/;"	f
 s:ReplaceCompleteopt	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^function! s:ReplaceCompleteopt() abort$/;"	f
 s:Resolve	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^fun! s:Resolve(source, target, output)$/;"	f
+s:RestoreSession	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:RestoreSession() abort$/;"	f
 s:Rgb2xterm	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:Rgb2xterm(color) "{{{1$/;"	f
 s:RgbBgColor	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:RgbBgColor() "{{{2$/;"	f
 s:RgbColor	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:RgbColor(str, lineno) "{{{2$/;"	f
@@ -4523,23 +4614,43 @@ s:SID	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function s:
 s:SandboxCheck	vim/pack/minpac/start/ale/autoload/ale/util.vim	/^        function! s:SandboxCheck() abort$/;"	f
 s:SearchForRootDirectory	vim/pack/minpac/start/vim-rooter/plugin/rooter.vim	/^function! s:SearchForRootDirectory()$/;"	f
 s:SendMessageData	vim/pack/minpac/start/ale/autoload/ale/lsp.vim	/^function! s:SendMessageData(conn, data) abort$/;"	f
+s:SetFoldLevel	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:SetFoldLevel(level, force) abort$/;"	f
+s:SetFoldLevelRecursive	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:SetFoldLevelRecursive(fileinfo, tags, level) abort$/;"	f
 s:SetListsImpl	vim/pack/minpac/start/ale/autoload/ale/list.vim	/^function! s:SetListsImpl(timer_id, buffer, loclist) abort$/;"	f
 s:SetMatcher	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:SetMatcher(color, pat) "{{{1$/;"	f
 s:SetSignColumnWithoutErrorsHighlight	vim/pack/minpac/start/ale/autoload/ale/sign.vim	/^    function! s:SetSignColumnWithoutErrorsHighlight() abort$/;"	f
+s:SetStatusLine	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:SetStatusLine()$/;"	f
 s:Setup	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^function! s:Setup(enabled) abort$/;"	f
 s:ShouldOpen	vim/pack/minpac/start/ale/autoload/ale/list.vim	/^function! s:ShouldOpen(buffer) abort$/;"	f
 s:ShouldSuggestForType	vim/pack/minpac/start/ale/autoload/ale/fix/registry.vim	/^function! s:ShouldSuggestForType(suggested_filetypes, type_list) abort$/;"	f
 s:ShowDetails	vim/pack/minpac/start/ale/autoload/ale/hover.vim	/^function! s:ShowDetails(linter) abort$/;"	f
+s:ShowInPreviewWin	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ShowInPreviewWin() abort$/;"	f
+s:ShowPrototype	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ShowPrototype(short) abort$/;"	f
+s:ShrinkIfExpanded	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ShrinkIfExpanded() abort$/;"	f
+s:State	vim/pack/minpac/start/tagbar/autoload/tagbar/state.vim	/^let s:State = {$/;"	v
+s:State.New	vim/pack/minpac/start/tagbar/autoload/tagbar/state.vim	/^function! s:State.New() abort dict$/;"	f
+s:State.getCurrent	vim/pack/minpac/start/tagbar/autoload/tagbar/state.vim	/^function! s:State.getCurrent(force_current) abort dict$/;"	f
+s:State.setCurrentFile	vim/pack/minpac/start/tagbar/autoload/tagbar/state.vim	/^function! s:State.setCurrentFile(fileinfo) abort dict$/;"	f
+s:State.setPaused	vim/pack/minpac/start/tagbar/autoload/tagbar/state.vim	/^function! s:State.setPaused() abort dict$/;"	f
 s:StatusForListFormat	vim/pack/minpac/start/ale/autoload/ale/statusline.vim	/^function! s:StatusForListFormat() abort$/;"	f
 s:StopCurrentJobs	vim/pack/minpac/start/ale/autoload/ale/engine.vim	/^function! s:StopCurrentJobs(buffer, include_lint_file_jobs) abort$/;"	f
 s:StopCursorTimer	vim/pack/minpac/start/ale/autoload/ale/cursor.vim	/^function! s:StopCursorTimer() abort$/;"	f
 s:TYPE	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^let s:TYPE = {'dict': type({}), 'funcref': type(function('call')), 'string': type(''), 'list': t/;"	v
+s:TagbarBufName	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:TagbarBufName() abort$/;"	f
 s:TemporaryFilename	vim/pack/minpac/start/ale/autoload/ale/command.vim	/^function! s:TemporaryFilename(buffer) abort$/;"	f
 s:TextChanged	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:TextChanged() "{{{1$/;"	f
 s:TimerHandler	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^function! s:TimerHandler(...) abort$/;"	f
+s:ToggleAutoclose	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ToggleAutoclose() abort$/;"	f
+s:ToggleCaseInsensitive	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ToggleCaseInsensitive() abort$/;"	f
+s:ToggleFold	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ToggleFold() abort$/;"	f
+s:ToggleHelp	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ToggleHelp() abort$/;"	f
+s:ToggleHideNonPublicTags	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ToggleHideNonPublicTags() abort$/;"	f
+s:ToggleSort	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ToggleSort() abort$/;"	f
+s:ToggleWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ToggleWindow(flags) abort$/;"	f
 s:Transform	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:Transform(algorithm,type) abort$/;"	f
 s:TransformOpfunc	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:TransformOpfunc(type) abort$/;"	f
 s:TransformSetup	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:TransformSetup(algorithm) abort$/;"	f
+s:TransformUserTypeDef	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:TransformUserTypeDef(def) abort$/;"	f
 s:TreeDirNode	vim/pack/minpac/start/nerdtree/lib/nerdtree/tree_dir_node.vim	/^let s:TreeDirNode = copy(g:NERDTreeFileNode)$/;"	v
 s:TreeDirNode.AbsoluteTreeRoot	vim/pack/minpac/start/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.AbsoluteTreeRoot()$/;"	f
 s:TreeDirNode.GetSelected	vim/pack/minpac/start/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.GetSelected()$/;"	f
@@ -4642,7 +4753,9 @@ s:VimExitCallback	vim/pack/minpac/start/ale/autoload/ale/job.vim	/^function! s:V
 s:VimOutputCallback	vim/pack/minpac/start/ale/autoload/ale/job.vim	/^function! s:VimOutputCallback(channel, data) abort$/;"	f
 s:Wholematch	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^fun! s:Wholematch(string, pat, start)$/;"	f
 s:Xterm2rgb	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^function! s:Xterm2rgb(color) "{{{1$/;"	f
+s:ZoomWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:ZoomWindow() abort$/;"	f
 s:_	vim/pack/minpac/start/lightline.vim/autoload/lightline.vim	/^let s:_ = 1$/;"	v
+s:_getPrefix	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:_getPrefix() abort dict$/;"	f
 s:_handleOldOptions	vim/pack/minpac/start/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:_handleOldOptions() abort$/;"	f
 s:_lightline	vim/pack/minpac/start/lightline.vim/autoload/lightline.vim	/^let s:_lightline = {$/;"	v
 s:abolish_l	vim/pack/minpac/start/vim-rails/plugin/rails.vim	/^function! s:abolish_l(word)$/;"	f
@@ -4657,8 +4770,18 @@ s:activateBookmark	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	
 s:activateDirNode	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateDirNode(directoryNode)$/;"	f
 s:activateFileNode	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateFileNode(node)$/;"	f
 s:active	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:active() abort$/;"	f
+s:addChild	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:addChild(tag) abort dict$/;"	f
+s:addTag	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:addTag(tag) abort dict$/;"	f
 s:add_db	vim/pack/minpac/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! s:add_db(db_file) abort$/;"	f
 s:add_methods	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:add_methods(namespace, method_names)$/;"	f
+s:add_snr	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:add_snr(funcname) abort$/;"	f
+s:add_snr	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:add_snr(funcname) abort$/;"	f
+s:add_snr	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/kindheadertag.vim	/^function! s:add_snr(funcname) abort$/;"	f
+s:add_snr	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/normaltag.vim	/^function! s:add_snr(funcname) abort$/;"	f
+s:add_snr	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/pseudotag.vim	/^function! s:add_snr(funcname) abort$/;"	f
+s:add_snr	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/splittag.vim	/^function! s:add_snr(funcname) abort$/;"	f
+s:add_snr	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/typeinfo.vim	/^function! s:add_snr(funcname) abort$/;"	f
+s:add_tag_recursive	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:add_tag_recursive(parent, taginfo, pathlist) abort$/;"	f
 s:added_db_files	vim/pack/minpac/start/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^let s:added_db_files = {}$/;"	v
 s:added_dbs	vim/pack/minpac/start/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:added_dbs = []$/;"	v
 s:addfilecmds	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:addfilecmds(type) abort$/;"	f
@@ -4736,6 +4859,7 @@ s:assert	vim/pack/minpac/start/lightline.vim/test/toggle.vim	/^let s:assert = th
 s:assert	vim/pack/minpac/start/lightline.vim/test/uniq.vim	/^let s:assert = themis#helper('assert')$/;"	v
 s:asset_cfile	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:asset_cfile() abort$/;"	f
 s:autocamelize	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:autocamelize(files,test)$/;"	f
+s:autocommands_done	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:autocommands_done = 0$/;"	v
 s:background	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:background = '#444444'$/;"	v
 s:background	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:background = '#F5F5F5'$/;"	v
 s:backslashdump	vim/pack/minpac/opt/vim-scriptease/autoload/scriptease.vim	/^function! s:backslashdump(value, indent) abort$/;"	f
@@ -4966,6 +5090,7 @@ s:buffer_name	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:b
 s:buffer_number	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:buffer_number() dict abort$/;"	f
 s:buffer_path	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:buffer_path() dict abort$/;"	f
 s:buffer_prototype	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^let s:buffer_prototype = {}$/;"	v
+s:buffer_seqno	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:buffer_seqno = 0$/;"	v
 s:buffer_setvar	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:buffer_setvar(varname, val) dict abort$/;"	f
 s:buffer_type_name	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:buffer_type_name(...) dict abort$/;"	f
 s:buflisted	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:buflisted()$/;"	f
@@ -4987,11 +5112,17 @@ s:chCwd	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function!
 s:chRoot	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:chRoot(node)$/;"	f
 s:chdir_pop	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:chdir_pop(buf_dir)$/;"	f
 s:chdir_push	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:chdir_push(work_dir)$/;"	f
+s:checked_ctags	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:checked_ctags       = 0$/;"	v
+s:checked_ctags_types	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:checked_ctags_types = 0$/;"	v
 s:chomp	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:chomp(str)$/;"	f
 s:classpath_sep	vim/pack/minpac/start/ale/ale_linters/java/javac.vim	/^let s:classpath_sep = has('unix') ? ':' : ';'$/;"	v
 s:classpath_sep	vim/pack/minpac/start/ale/ale_linters/kotlin/kotlinc.vim	/^let s:classpath_sep = has('unix') ? ':' : ';'$/;"	v
+s:clearOldFolds	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:clearOldFolds() abort dict$/;"	f
 s:closeChildren	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeChildren(node)$/;"	f
 s:closeCurrentDir	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeCurrentDir(node)$/;"	f
+s:closeFold	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:closeFold() abort dict$/;"	f
+s:closeFold	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/kindheadertag.vim	/^function! s:closeFold() abort dict$/;"	f
+s:closeKindFold	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:closeKindFold(kind) abort dict$/;"	f
 s:closeTreeWindow	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeTreeWindow()$/;"	f
 s:cmd	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:cmd(bang, ...) abort$/;"	f
 s:cmd_history_sink	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:cmd_history_sink(lines)$/;"	f
@@ -5006,6 +5137,9 @@ s:command_sink	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:
 s:commits	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:commits(buffer_local, args)$/;"	f
 s:commits_sink	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:commits_sink(lines)$/;"	f
 s:common_sink	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:common_sink(action, lines) abort$/;"	f
+s:compare_by_kind	vim/pack/minpac/start/tagbar/autoload/tagbar/sorting.vim	/^function! s:compare_by_kind(tag1, tag2) abort$/;"	f
+s:compare_by_line	vim/pack/minpac/start/tagbar/autoload/tagbar/sorting.vim	/^function! s:compare_by_line(tag1, tag2) abort$/;"	f
+s:compare_typeinfo	vim/pack/minpac/start/tagbar/autoload/tagbar/sorting.vim	/^let s:compare_typeinfo = {}$/;"	v
 s:complete_insert	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:complete_insert(lines)$/;"	f
 s:complete_trigger	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:complete_trigger()$/;"	f
 s:completion_filter	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:completion_filter(results, A, ...) abort$/;"	f
@@ -5022,7 +5156,10 @@ s:cpo_save	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^let s:cpo_save =
 s:cpo_save	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim/complete.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	vim/pack/minpac/start/fzf.vim/plugin/fzf.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^let s:cpo_save = &cpo$/;"	v
+s:createKinddict	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/typeinfo.vim	/^function! s:createKinddict() abort dict$/;"	f
+s:create_pseudotag	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:create_pseudotag(name, parent, kind, typeinfo, fileinfo) abort$/;"	f
 s:csi	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:csi(color, fg)$/;"	f
+s:ctags_is_uctags	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:ctags_is_uctags     = 0$/;"	v
 s:cuicolor	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme.vim	/^let s:cuicolor = {$/;"	v
 s:cuicolors	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/solarized.vim	/^let s:cuicolors = {$/;"	v
 s:cuiindex	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/solarized.vim	/^  let s:cuiindex = 0$/;"	v
@@ -5046,6 +5183,8 @@ s:darkGray	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/Ol
 s:dark_grey_blue	vim/colors/twilight.vim	/^let s:dark_grey_blue = '#34383c'$/;"	v
 s:darkgrey	vim/colors/twilight.vim	/^let s:darkgrey = '#1a1a1a'$/;"	v
 s:debug	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:debug(str)$/;"	f
+s:debug_enabled	vim/pack/minpac/start/tagbar/autoload/tagbar/debug.vim	/^let s:debug_enabled = 0$/;"	v
+s:debug_file	vim/pack/minpac/start/tagbar/autoload/tagbar/debug.vim	/^let s:debug_file = ''$/;"	v
 s:decrement_job_count	vim/pack/minpac/opt/minpac/autoload/minpac/impl.vim	/^function! s:decrement_job_count() abort$/;"	f
 s:default_action	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^let s:default_action = {$/;"	v
 s:default_action	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^let s:default_action = {$/;"	v
@@ -5062,6 +5201,7 @@ s:defaults	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^let s:defaults
 s:defaults	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^let s:defaults.operator.prompt = 0$/;"	v
 s:define_navcommand	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:define_navcommand(name, projection, ...) abort$/;"	f
 s:defs	vim/pack/minpac/start/fzf.vim/plugin/fzf.vim	/^function! s:defs(commands)$/;"	f
+s:delayed_update_files	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:delayed_update_files = []$/;"	v
 s:deleteBookmark	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:deleteBookmark(bookmark)$/;"	f
 s:did_check_exe	vim/pack/minpac/start/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:did_check_exe = 0$/;"	v
 s:dirArrows	vim/pack/minpac/start/nerdtree/syntax/nerdtree.vim	/^let s:dirArrows = escape(g:NERDTreeDirArrowCollapsible, '~]\\-').escape(g:NERDTreeDirArrowExpand/;"	v
@@ -5069,6 +5209,7 @@ s:dir_complete	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vi
 s:disable_maps_and_commands	vim/pack/minpac/opt/vim-scriptease/autoload/scriptease.vim	/^function! s:disable_maps_and_commands(file, buf) abort$/;"	f
 s:displayHelp	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:displayHelp()$/;"	f
 s:do	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:do(bang, count, cmd) abort$/;"	f
+s:do_delayed_update	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:do_delayed_update() abort$/;"	f
 s:doau_user	vim/pack/minpac/start/vim-rails/plugin/rails.vim	/^function! s:doau_user(arg) abort$/;"	f
 s:done	vim/pack/minpac/opt/minpac/test/runtest.vim	/^let s:done = 0$/;"	v
 s:done	vim/pack/minpac/start/vim-rooter/test/runner.vim	/^  let s:done += 1$/;"	v
@@ -5125,6 +5266,7 @@ s:exit_cb	vim/pack/minpac/opt/minpac/autoload/minpac/job.vim	/^function! s:exit_
 s:exit_handler	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:exit_handler(code, command, ...)$/;"	f
 s:expand	vim/pack/minpac/start/lightline.vim/autoload/lightline.vim	/^function! s:expand(components) abort$/;"	f
 s:expand	vim/pack/minpac/start/lightline.vim/test/expand.vim	/^function! s:expand(...)$/;"	f
+s:expand_bufnr	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:expand_bufnr = -1$/;"	v
 s:expand_placeholder	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:expand_placeholder(placeholder, expansions) abort$/;"	f
 s:expand_placeholder	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:expand_placeholder(placeholder, expansions) abort$/;"	f
 s:expand_placeholders	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:expand_placeholders(value, expansions) abort$/;"	f
@@ -5275,6 +5417,16 @@ s:gb	vim/colors/gruvbox.vim	/^let s:gb.red    = s:red$/;"	v
 s:gb	vim/colors/gruvbox.vim	/^let s:gb.yellow = s:yellow$/;"	v
 s:generate_base_colors	vim/colors/neodark.vim	/^function! s:generate_base_colors(base1)$/;"	f
 s:generate_helptags	vim/pack/minpac/opt/minpac/autoload/minpac/impl.vim	/^function! s:generate_helptags(dir, force) abort$/;"	f
+s:get	vim/pack/minpac/start/tagbar/autoload/tagbar/state.vim	/^function! s:get() abort$/;"	f
+s:getChildren	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:getChildren() dict abort$/;"	f
+s:getChildrenByName	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:getChildrenByName(tagname) dict abort$/;"	f
+s:getClosedParentTline	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:getClosedParentTline() abort dict$/;"	f
+s:getKind	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/typeinfo.vim	/^function! s:getKind(kind) abort dict$/;"	f
+s:getPrototype	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:getPrototype(short) abort dict$/;"	f
+s:getPrototype	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/kindheadertag.vim	/^function! s:getPrototype(short) abort dict$/;"	f
+s:getPrototype	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/normaltag.vim	/^function! s:getPrototype(short) abort dict$/;"	f
+s:getTags	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:getTags() dict abort$/;"	f
+s:getTagsByName	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:getTagsByName(tagname) dict abort$/;"	f
 s:get_color	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:get_color(attr, ...)$/;"	f
 s:get_color	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:get_color(attr, ...)$/;"	f
 s:get_config	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:get_config() abort$/;"	f
@@ -5283,13 +5435,18 @@ s:get_current_tool	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^functi
 s:get_current_tool_name	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:get_current_tool_name(flags) abort$/;"	f
 s:get_git_root	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:get_git_root()$/;"	f
 s:get_grepprg	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:get_grepprg(flags) abort$/;"	f
+s:get_map_str	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:get_map_str(map) abort$/;"	f
 s:get_plugin_revision	vim/pack/minpac/opt/minpac/autoload/minpac/impl.vim	/^function! s:get_plugin_revision(name) abort$/;"	f
 s:getcmdwintype_exists	vim/pack/minpac/start/ale/autoload/ale.vim	/^let s:getcmdwintype_exists = exists('*getcmdwintype')$/;"	v
 s:getlist	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:getlist(arg, key)$/;"	f
 s:getnames	vim/pack/minpac/opt/minpac/test/test_minpac.vim	/^func s:getnames(plugs)$/;"	f
 s:getpos	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:getpos()$/;"	f
+s:gettime	vim/pack/minpac/start/tagbar/autoload/tagbar/debug.vim	/^    function! s:gettime() abort$/;"	f
 s:global_variable_list	vim/pack/minpac/start/ale/autoload/ale/debugging.vim	/^let s:global_variable_list = [$/;"	v
 s:go_to_definition_map	vim/pack/minpac/start/ale/autoload/ale/definition.vim	/^let s:go_to_definition_map = {}$/;"	v
+s:goto_markedwin	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:goto_markedwin(...) abort$/;"	f
+s:goto_tagbar	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:goto_tagbar(...) abort$/;"	f
+s:goto_win	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:goto_win(winnr, ...) abort$/;"	f
 s:gray	vim/colors/gruvbox.vim	/^  let s:gray = s:gb.gray_244$/;"	v
 s:gray	vim/colors/gruvbox.vim	/^  let s:gray = s:gb.gray_245$/;"	v
 s:gray	vim/colors/gruvbox.vim	/^  let s:gray[1]   = 8$/;"	v
@@ -5370,9 +5527,13 @@ s:history_source	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! 
 s:hls_cursor	vim/colors/gruvbox.vim	/^  let s:hls_cursor = get(s:gb, g:gruvbox_hls_cursor)$/;"	v
 s:hls_cursor	vim/colors/gruvbox.vim	/^let s:hls_cursor = s:orange$/;"	v
 s:hover_map	vim/pack/minpac/start/ale/autoload/ale/hover.vim	/^let s:hover_map = {}$/;"	v
+s:ics	vim/pack/minpac/start/tagbar/syntax/tagbar.vim	/^let s:ics = escape(join(g:tagbar_iconchars, ''), ']^\\-')$/;"	v
+s:initFoldState	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:initFoldState(known_files) abort dict$/;"	f
 s:initOpenURL	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:initOpenURL() abort$/;"	f
 s:initVariable	vim/pack/minpac/start/nerdtree/plugin/NERD_tree.vim	/^function! s:initVariable(var, value)$/;"	f
+s:init_done	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:init_done = 0$/;"	v
 s:init_path	vim/pack/minpac/start/ale/autoload/ale/gradle.vim	/^let s:init_path = has('win32')$/;"	v
+s:init_var	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^function! s:init_var(var, value) abort$/;"	f
 s:inject_snippet	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:inject_snippet(line)$/;"	f
 s:install	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^let s:install = s:base_dir.'\/install'$/;"	v
 s:installed	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^let s:installed = 0$/;"	v
@@ -5386,8 +5547,21 @@ s:invert_tabline	vim/colors/gruvbox.vim	/^    let s:invert_tabline = s:inverse$/
 s:invert_tabline	vim/colors/gruvbox.vim	/^let s:invert_tabline = ''$/;"	v
 s:invertrange	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:invertrange(beg,end)$/;"	f
 s:invoke_hook	vim/pack/minpac/opt/minpac/autoload/minpac/impl.vim	/^function! s:invoke_hook(hooktype, args, hook) abort$/;"	f
+s:isFoldable	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:isFoldable() abort dict$/;"	f
+s:isFoldable	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/kindheadertag.vim	/^function! s:isFoldable() abort dict$/;"	f
+s:isFolded	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:isFolded() abort dict$/;"	f
+s:isFolded	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/kindheadertag.vim	/^function! s:isFolded() abort dict$/;"	f
+s:isKindheader	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:isKindheader() abort dict$/;"	f
+s:isKindheader	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/kindheadertag.vim	/^function! s:isKindheader() abort dict$/;"	f
+s:isNormalTag	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:isNormalTag() abort dict$/;"	f
+s:isNormalTag	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/normaltag.vim	/^function! s:isNormalTag() abort dict$/;"	f
+s:isPseudoTag	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:isPseudoTag() abort dict$/;"	f
+s:isPseudoTag	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/pseudotag.vim	/^function! s:isPseudoTag() abort dict$/;"	f
+s:isSplitTag	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:isSplitTag() abort dict$/;"	f
+s:isSplitTag	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/splittag.vim	/^function! s:isSplitTag() abort dict$/;"	f
 s:is_dark	vim/colors/gruvbox.vim	/^let s:is_dark=(&background == 'dark')$/;"	v
 s:is_embedded_ruby	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:is_embedded_ruby() abort$/;"	f
+s:is_maximized	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:is_maximized    = 0$/;"	v
 s:is_win	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
 s:is_win	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim/complete.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
 s:is_win	vim/pack/minpac/start/fzf.vim/plugin/fzf.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
@@ -5438,9 +5612,16 @@ s:jumpargs	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:jump
 s:jumpopt	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:jumpopt(file) abort$/;"	f
 s:keepcpo	vim/pack/minpac/start/colorizer/autoload/colorizer.vim	/^let s:keepcpo = &cpo$/;"	v
 s:key_sink	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:key_sink(line)$/;"	f
+s:known_files	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:known_files = {$/;"	v
 s:known_files	vim/pack/minpac/start/vim-gutentags/autoload/gutentags.vim	/^let s:known_files = []$/;"	v
+s:known_files.get	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:known_files.get(fname) abort dict$/;"	f
+s:known_files.has	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:known_files.has(fname) abort dict$/;"	f
+s:known_files.put	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:known_files.put(fileinfo, ...) abort dict$/;"	f
+s:known_files.rm	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:known_files.rm(fname) abort dict$/;"	f
 s:known_projects	vim/pack/minpac/start/vim-gutentags/autoload/gutentags.vim	/^let s:known_projects = {}$/;"	v
+s:last_alt_bufnr	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:last_alt_bufnr = -1$/;"	v
 s:last_done_pos	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^let s:last_done_pos = []$/;"	v
+s:last_highlight_tline	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:last_highlight_tline = 0$/;"	v
 s:last_mps	vim/pack/minpac/start/vim-matchit/plugin/matchit.vim	/^let s:last_mps = ""$/;"	v
 s:last_pattern_options	vim/pack/minpac/start/ale/autoload/ale/pattern_options.vim	/^let s:last_pattern_options = {}$/;"	v
 s:last_pos	vim/pack/minpac/start/ale/autoload/ale/cursor.vim	/^let s:last_pos = [0, 0, 0]$/;"	v
@@ -5492,6 +5673,7 @@ s:map	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:m
 s:maps	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:maps() abort$/;"	f
 s:maps	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^let s:maps = []$/;"	v
 s:mark_sink	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:mark_sink(lines)$/;"	f
+s:mark_window	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:mark_window() abort$/;"	f
 s:match	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:match(file, pattern) abort$/;"	f
 s:match_plugin	vim/pack/minpac/opt/minpac/autoload/minpac/impl.vim	/^function! s:match_plugin(dir, packname, plugnames) abort$/;"	f
 s:match_type	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:match_type(type,...)$/;"	f
@@ -5513,6 +5695,8 @@ s:mods	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:mods(mod
 s:navy	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:navy = '#df875f'$/;"	v
 s:navy	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:navy = '#005f87'$/;"	v
 s:nbs	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^let s:nbs = nr2char(0x2007)$/;"	v
+s:nearby_disabled	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:nearby_disabled = 0$/;"	v
+s:new_window	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:new_window      = 1$/;"	v
 s:next_tool	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:next_tool(flags)$/;"	f
 s:nomodeline	vim/pack/minpac/start/vim-rooter/plugin/rooter.vim	/^let s:nomodeline = (v:version > 703 || (v:version == 703 && has('patch442'))) ? '<nomodeline>' :/;"	v
 s:none	vim/colors/OceanicNext.vim	/^  let s:none=['NONE', 'NONE']$/;"	v
@@ -5555,10 +5739,14 @@ s:open	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:open(cmd
 s:open	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:open(cmd, target)$/;"	f
 s:open	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:open(cmd, file) abort$/;"	f
 s:openExplorer	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openExplorer(node)$/;"	f
+s:openFold	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:openFold() abort dict$/;"	f
+s:openFold	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/kindheadertag.vim	/^function! s:openFold() abort dict$/;"	f
 s:openHSplit	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openHSplit(target)$/;"	f
 s:openInNewTab	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openInNewTab(target)$/;"	f
 s:openInNewTabSilent	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openInNewTabSilent(target)$/;"	f
+s:openKindFold	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:openKindFold(kind) abort dict$/;"	f
 s:openNodeRecursively	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openNodeRecursively(node)$/;"	f
+s:openParents	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:openParents() abort dict$/;"	f
 s:openVSplit	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openVSplit(target)$/;"	f
 s:open_projection	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:open_projection(cmd, variants, ...) abort$/;"	f
 s:operator	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:operator(type) abort$/;"	f
@@ -5988,6 +6176,13 @@ s:pathjoin	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:path
 s:paths	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:paths() abort$/;"	f
 s:pathsplit	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:pathsplit(path) abort$/;"	f
 s:pattern	vim/pack/minpac/start/lightline.vim/test/highlight.vim	/^function! s:pattern(xs, ...) abort$/;"	f
+s:pattern	vim/pack/minpac/start/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\(\\S\\@<![' . s:ics . ' ]\\)\\@<=#\\([^-+# ]\\)\\@='$/;"	v
+s:pattern	vim/pack/minpac/start/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\(\\S\\@<![' . s:ics . ' ]\\)\\@<=+\\([^-+# ]\\)\\@='$/;"	v
+s:pattern	vim/pack/minpac/start/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\(\\S\\@<![' . s:ics . ' ]\\)\\@<=-\\([^-+# ]\\)\\@='$/;"	v
+s:pattern	vim/pack/minpac/start/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\(\\S\\@<![' . s:ics . '][-+# ]\\?\\)\\@<=[^*(]\\+\\(\\*\\?\\(([^)]\\+)\\)\\? /;"	v
+s:pattern	vim/pack/minpac/start/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\(^[' . s:ics . '] \\?\\)\\@3<=[^-+: ]\\+[^:]\\+$'$/;"	v
+s:pattern	vim/pack/minpac/start/tagbar/syntax/tagbar.vim	/^let s:pattern = '\\S\\@<![' . s:ics . ']\\([-+# ]\\?\\)\\@='$/;"	v
+s:paused	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:paused = 0$/;"	v
 s:peach	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/seoul256.vim	/^let s:peach = [ '#d7afaf', 181 ]$/;"	v
 s:pink	vim/colors/neodark.vim	/^  let s:pink[0]       = '#d7afaf'$/;"	v
 s:pink	vim/colors/neodark.vim	/^  let s:pink[1]       = 9$/;"	v
@@ -6032,6 +6227,7 @@ s:purple	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/one.
 s:push_chdir	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:push_chdir(...)$/;"	f
 s:pushd	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:pushd(dict)$/;"	f
 s:putline	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:putline(how, map) abort$/;"	f
+s:pwin_by_tagbar	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:pwin_by_tagbar = 0$/;"	v
 s:qf_pre	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:qf_pre() abort$/;"	f
 s:qf_pre	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:qf_pre() abort$/;"	f
 s:query_exec_with_alternate	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:query_exec_with_alternate(key) abort$/;"	f
@@ -6106,7 +6302,10 @@ s:refreshRoot	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^fun
 s:relglob	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:relglob(...)$/;"	f
 s:reload_log	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:reload_log() abort$/;"	f
 s:remain_jobs	vim/pack/minpac/opt/minpac/autoload/minpac/impl.vim	/^let s:remain_jobs = 0$/;"	v
+s:removeChild	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:removeChild(tag) dict abort$/;"	f
+s:removeTag	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:removeTag(tag) dict abort$/;"	f
 s:remove_layout	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:remove_layout(opts)$/;"	f
+s:reset	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:reset() abort dict$/;"	f
 s:resetomnicomplete	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:resetomnicomplete()$/;"	f
 s:restore_errorformat	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:restore_errorformat() abort$/;"	f
 s:restore_mapping	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:restore_mapping(mapping)$/;"	f
@@ -6137,13 +6336,17 @@ s:selectiveexpand	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function!
 s:sep	vim/pack/minpac/start/ale/autoload/ale/c.vim	/^let s:sep = has('win32') ? '\\' : '\/'$/;"	v
 s:sep	vim/pack/minpac/start/ale/autoload/ale/handlers/eslint.vim	/^let s:sep = has('win32') ? '\\' : '\/'$/;"	v
 s:sep	vim/pack/minpac/start/ale/autoload/ale/python.vim	/^let s:sep = has('win32') ? '\\' : '\/'$/;"	v
+s:setFolded	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! s:setFolded(folded) abort dict$/;"	f
 s:set_path_options	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:set_path_options() abort$/;"	f
 s:set_prompt_op	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:set_prompt_op(op) abort$/;"	f
+s:setup_keymaps	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^function! s:setup_keymaps() abort$/;"	f
+s:setup_options	vim/pack/minpac/start/tagbar/plugin/tagbar.vim	/^function! s:setup_options() abort$/;"	f
 s:setup_paste	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:setup_paste() abort$/;"	f
 s:shellesc	vim/pack/minpac/opt/vim-scriptease/autoload/scriptease.vim	/^function! s:shellesc(arg) abort$/;"	f
 s:shellesc_cmd	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:shellesc_cmd(arg)$/;"	f
 s:shelljoin	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:shelljoin(val) abort$/;"	f
 s:shellslash	vim/pack/minpac/opt/vim-scriptease/autoload/scriptease.vim	/^function! s:shellslash(path) abort$/;"	f
+s:short_help	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:short_help      = 1$/;"	v
 s:shortpath	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:shortpath()$/;"	f
 s:shortpath	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:shortpath()$/;"	f
 s:should_complete_map	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^let s:should_complete_map = {$/;"	v
@@ -6161,6 +6364,7 @@ s:skipped	vim/pack/minpac/opt/minpac/test/runtest.vim	/^let s:skipped = []$/;"	v
 s:slash	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^let s:slash   = exists('+shellslash') && !&shellslash ? '\\' : '\/'$/;"	v
 s:slash	vim/pack/minpac/start/vim-projectionist/autoload/projectionist.vim	/^function! s:slash(str) abort$/;"	f
 s:solarized_termcolors	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/solarized.vim	/^let s:solarized_termcolors = get(g:, 'solarized_termcolors', 256)$/;"	v
+s:sortTags	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! s:sortTags(compare_typeinfo) abort dict$/;"	f
 s:sort_buffers	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:sort_buffers(...)$/;"	f
 s:sorted_items	vim/pack/minpac/start/ale/autoload/ale/pattern_options.vim	/^let s:sorted_items = []$/;"	v
 s:specEdit	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:specEdit(cmd,...) abort$/;"	f
@@ -6182,11 +6386,15 @@ s:statusline_active_bg	vim/pack/minpac/start/lightline.vim/autoload/lightline/co
 s:statusline_active_bg	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:statusline_active_bg = s:navy$/;"	v
 s:statusline_active_fg	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:statusline_active_fg = '#1c1c1c'$/;"	v
 s:statusline_active_fg	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:statusline_active_fg = s:window$/;"	v
+s:statusline_in_use	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:statusline_in_use = 0$/;"	v
 s:statusline_inactive_bg	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:statusline_inactive_bg = '#444444'$/;"	v
 s:statusline_inactive_bg	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:statusline_inactive_bg = '#dadada'$/;"	v
 s:statusline_inactive_fg	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:statusline_inactive_fg = '#c6c6c6'$/;"	v
 s:statusline_inactive_fg	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:statusline_inactive_fg = s:foreground$/;"	v
 s:store_errorformat	vim/pack/minpac/start/vim-grepper/plugin/grepper.vim	/^function! s:store_errorformat(flags) abort$/;"	f
+s:str	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/normaltag.vim	/^function! s:str(longsig, full) abort dict$/;"	f
+s:strfmt	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/normaltag.vim	/^function! s:strfmt() abort dict$/;"	f
+s:strfmt	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/pseudotag.vim	/^function! s:strfmt() abort dict$/;"	f
 s:string_decode	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:string_decode(str) abort$/;"	f
 s:string_encode	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:string_encode(str) abort$/;"	f
 s:strip	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:strip(str)$/;"	f
@@ -6420,6 +6628,7 @@ s:timer_id	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^let s:timer_i
 s:timestamp_map	vim/pack/minpac/start/ale/autoload/ale.vim	/^let s:timestamp_map = {}$/;"	v
 s:tmux_enabled	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:tmux_enabled()$/;"	f
 s:toggle	vim/pack/minpac/start/vim-unimpaired/plugin/unimpaired.vim	/^function! s:toggle(op) abort$/;"	f
+s:toggleFold	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/kindheadertag.vim	/^function! s:toggleFold(fileinfo) abort dict$/;"	f
 s:toggleIgnoreFilter	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:toggleIgnoreFilter()$/;"	f
 s:toggleShowBookmarks	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:toggleShowBookmarks()$/;"	f
 s:toggleShowFiles	vim/pack/minpac/start/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:toggleShowFiles()$/;"	f
@@ -6442,6 +6651,7 @@ s:transformations.underscore	vim/pack/minpac/start/vim-rails/autoload/rails.vim	
 s:transformations.uppercase	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:transformations.uppercase(input, o) abort$/;"	f
 s:tree_up_dir_line	vim/pack/minpac/start/nerdtree/syntax/nerdtree.vim	/^let s:tree_up_dir_line = '.. (up a dir)'$/;"	v
 s:trigger_character_map	vim/pack/minpac/start/ale/autoload/ale/completion.vim	/^let s:trigger_character_map = {$/;"	v
+s:type_init_done	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:type_init_done    = 0$/;"	v
 s:undercurl	vim/colors/gruvbox.vim	/^  let s:undercurl = ''$/;"	v
 s:undercurl	vim/colors/gruvbox.vim	/^let s:undercurl = 'undercurl,'$/;"	v
 s:underline	vim/colors/gruvbox.vim	/^  let s:underline = ''$/;"	v
@@ -6482,14 +6692,18 @@ s:viewList	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:view
 s:view_types	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^let s:view_types = split('rhtml,erb,rxml,builder,rjs,haml',',')$/;"	v
 s:vim_bg	vim/colors/gruvbox.vim	/^let s:vim_bg = ['bg', 'bg']$/;"	v
 s:vim_fg	vim/colors/gruvbox.vim	/^let s:vim_fg = ['fg', 'fg']$/;"	v
+s:vim_quitting	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:vim_quitting = 0$/;"	v
 s:violet	vim/colors/twilight.vim	/^let s:violet = '#a999ac'$/;"	v
 s:violet	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/16color.vim	/^let s:violet = [ '#ff00ff', 13 ]$/;"	v
 s:violet	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/solarized.vim	/^let s:violet = [ '#6c71c4', s:cuicolors.violet[s:cuiindex] ]$/;"	v
+s:visibility_symbols	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^let s:visibility_symbols = {$/;"	v
 s:visual_bg	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:visual_bg = '#8787af'$/;"	v
 s:visual_fg	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:visual_fg = '#000000'$/;"	v
 s:warn	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:warn(message)$/;"	f
 s:warn	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^function! s:warn(msg)$/;"	f
 s:warn	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:warn(str) abort$/;"	f
+s:warning	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! s:warning(msg) abort$/;"	f
+s:warnings	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:warnings = {$/;"	v
 s:webcat	vim/pack/minpac/start/vim-rails/autoload/rails.vim	/^function! s:webcat() abort$/;"	f
 s:white	vim/colors/twilight.vim	/^let s:white = '#fffedc'$/;"	v
 s:white	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/OldHope.vim	/^let s:white = [ '#ffffff' , 15 ]$/;"	v
@@ -6499,7 +6713,10 @@ s:white	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/seoul
 s:wide	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^let s:wide = 120$/;"	v
 s:window	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:window = '#efefef'$/;"	v
 s:window	vim/pack/minpac/start/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:window = '#efefef'$/;"	v
+s:window_expanded	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:window_expanded   = 0$/;"	v
+s:window_pos	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:window_pos = {$/;"	v
 s:windows_sink	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:windows_sink(line)$/;"	f
+s:winrestcmd	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^let s:winrestcmd      = ''$/;"	v
 s:word_regex_list	vim/pack/minpac/start/ale/ale_linters/vim/vint.vim	/^let s:word_regex_list = [$/;"	v
 s:wrap	vim/pack/minpac/start/fzf.vim/autoload/fzf/vim.vim	/^function! s:wrap(name, opts, bang)$/;"	f
 s:wrap_cmds	vim/pack/minpac/start/fzf/plugin/fzf.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
@@ -6658,6 +6875,38 @@ tabstop	vim/pack/minpac/start/fzf/src/tui/light.go	/^	tabstop       int$/;"	m	st
 tabstop	vim/pack/minpac/start/fzf/src/tui/light.go	/^	tabstop  int$/;"	m	struct:tui.LightWindow
 tac	vim/pack/minpac/start/fzf/src/matcher.go	/^	tac            bool$/;"	m	struct:fzf.Matcher
 tac	vim/pack/minpac/start/fzf/src/merger.go	/^	tac     bool$/;"	m	struct:fzf.Merger
+tagbar#CloseWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#CloseWindow() abort$/;"	f
+tagbar#OpenWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#OpenWindow(...) abort$/;"	f
+tagbar#RestoreSession	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#RestoreSession() abort$/;"	f
+tagbar#SetFoldLevel	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#SetFoldLevel(level, force) abort$/;"	f
+tagbar#ToggleWindow	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#ToggleWindow(...) abort$/;"	f
+tagbar#autoopen	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#autoopen(...) abort$/;"	f
+tagbar#currentfile	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#currentfile() abort$/;"	f
+tagbar#currenttag	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#currenttag(fmt, default, ...) abort$/;"	f
+tagbar#debug#enabled	vim/pack/minpac/start/tagbar/autoload/tagbar/debug.vim	/^function! tagbar#debug#enabled() abort$/;"	f
+tagbar#debug#log	vim/pack/minpac/start/tagbar/autoload/tagbar/debug.vim	/^function! tagbar#debug#log(msg) abort$/;"	f
+tagbar#debug#log_ctags_output	vim/pack/minpac/start/tagbar/autoload/tagbar/debug.vim	/^function! tagbar#debug#log_ctags_output(output) abort$/;"	f
+tagbar#debug#start_debug	vim/pack/minpac/start/tagbar/autoload/tagbar/debug.vim	/^function! tagbar#debug#start_debug(...) abort$/;"	f
+tagbar#debug#stop_debug	vim/pack/minpac/start/tagbar/autoload/tagbar/debug.vim	/^function! tagbar#debug#stop_debug() abort$/;"	f
+tagbar#gettypeconfig	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#gettypeconfig(type) abort$/;"	f
+tagbar#getusertypes	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#getusertypes() abort$/;"	f
+tagbar#highlighttag	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#highlighttag(openfolds, force) abort$/;"	f
+tagbar#inspect	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#inspect(var) abort$/;"	f
+tagbar#is_paused	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#is_paused() abort$/;"	f
+tagbar#prototypes#basetag#new	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/basetag.vim	/^function! tagbar#prototypes#basetag#new(name) abort$/;"	f
+tagbar#prototypes#fileinfo#new	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/fileinfo.vim	/^function! tagbar#prototypes#fileinfo#new(fname, ftype, typeinfo) abort$/;"	f
+tagbar#prototypes#kindheadertag#new	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/kindheadertag.vim	/^function! tagbar#prototypes#kindheadertag#new(name) abort$/;"	f
+tagbar#prototypes#normaltag#new	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/normaltag.vim	/^function! tagbar#prototypes#normaltag#new(name) abort$/;"	f
+tagbar#prototypes#pseudotag#new	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/pseudotag.vim	/^function! tagbar#prototypes#pseudotag#new(name) abort$/;"	f
+tagbar#prototypes#splittag#new	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/splittag.vim	/^function! tagbar#prototypes#splittag#new(name) abort$/;"	f
+tagbar#prototypes#typeinfo#new	vim/pack/minpac/start/tagbar/autoload/tagbar/prototypes/typeinfo.vim	/^function! tagbar#prototypes#typeinfo#new(...) abort$/;"	f
+tagbar#sorting#sort	vim/pack/minpac/start/tagbar/autoload/tagbar/sorting.vim	/^function! tagbar#sorting#sort(tags, compareby, compare_typeinfo) abort$/;"	f
+tagbar#state#get_current_file	vim/pack/minpac/start/tagbar/autoload/tagbar/state.vim	/^function! tagbar#state#get_current_file(force_current) abort$/;"	f
+tagbar#state#set_current_file	vim/pack/minpac/start/tagbar/autoload/tagbar/state.vim	/^function! tagbar#state#set_current_file(fileinfo) abort$/;"	f
+tagbar#state#set_paused	vim/pack/minpac/start/tagbar/autoload/tagbar/state.vim	/^function! tagbar#state#set_paused() abort$/;"	f
+tagbar#toggle_pause	vim/pack/minpac/start/tagbar/autoload/tagbar.vim	/^function! tagbar#toggle_pause() abort$/;"	f
+tagbar#types#ctags#init	vim/pack/minpac/start/tagbar/autoload/tagbar/types/ctags.vim	/^function! tagbar#types#ctags#init(supported_types) abort$/;"	f
+tagbar#types#uctags#init	vim/pack/minpac/start/tagbar/autoload/tagbar/types/uctags.vim	/^function! tagbar#types#uctags#init(supported_types) abort$/;"	f
 target	vim/pack/minpac/start/fzf/Makefile	/^target:$/;"	t
 target/$(BINARY32)	vim/pack/minpac/start/fzf/Makefile	/^target\/$(BINARY32): $(SOURCES) vendor$/;"	t
 target/$(BINARY64)	vim/pack/minpac/start/fzf/Makefile	/^target\/$(BINARY64): $(SOURCES) vendor$/;"	t

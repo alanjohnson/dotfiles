@@ -36,6 +36,7 @@ call minpac#add('ericbn/vim-solarized')
 call minpac#add('adelarsq/vim-matchit')
 call minpac#add('w0rp/ale')
 call minpac#add('ludovicchabant/vim-gutentags')
+call minpac#add('majutsushi/tagbar')
 
 "call minpac#add('dbakker/vim-projectroot')
 call minpac#add('airblade/vim-rooter')
@@ -87,8 +88,9 @@ set laststatus=2
 
 " Tagbar (install info: https://thomashunter.name/blog/installing-vim-tagbar-with-macvim-in-os-x/)
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
+set tags=./tags;,tags;$HOME
 let g:tagbar_width=26                          " Default is 40, seems too wide
-map <silent><leader>y :TagbarToggle<CR>                " Display panel with y (or ,y)
+map <silent><leader>t :TagbarToggle<CR>                " Display panel with y (or ,y)
 "---------------------- END ----------------------"
 "
 "
