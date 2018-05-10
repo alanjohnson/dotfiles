@@ -29,19 +29,22 @@ call minpac#add('tpope/vim-unimpaired')
 call minpac#add('scrooloose/nerdtree')
 call minpac#add('tpope/vim-rails')
 call minpac#add('tpope/vim-projectionist')
-call minpac#add('mileszs/ack.vim')
 call minpac#add('severin-lemaignan/vim-minimap')
-call minpac#add('rking/ag.vim')
 call minpac#add('lilydjwg/colorizer')
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('ericbn/vim-solarized')
 call minpac#add('adelarsq/vim-matchit')
-call minpac#add('dbakker/vim-projectroot')
 call minpac#add('w0rp/ale')
+
+"call minpac#add('dbakker/vim-projectroot')
 call minpac#add('airblade/vim-rooter')
 "autocmd BufEnter * :Rooter
 let g:rooter_silent_chdir = 1
 let g:rooter_resolve_links = 1
+
+call minpac#add('mhinz/vim-grepper')
+"call minpac#add('rking/ag.vim')
+"call minpac#add('mileszs/ack.vim')
 
 call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
@@ -144,6 +147,30 @@ if has('statusline')
   "Status line gnarliness
   "set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 endif
+"---------------------- END ----------------------"
+"
+"------------------- Grepper --------------------"
+let g:grepper       = {}
+let g:grepper.tools = ['grep', 'git', 'rg', 'ack']
+let g:grepper.jump          = 1
+let g:grepper.next_tool     = '<leader>g'
+let g:grepper.simple_prompt = 1
+let g:grepper.quickfix      = 0
+" Search for the current word
+nnoremap <leader>* :Grepper -tool grep -cword -noprompt<cr>
+nnoremap <leader>a :Grepper -tool ack<cr>
+nnoremap <leader>g :Grepper -tool grep<cr>
+nnoremap <leader>G :Grepper -tool git<cr>
+" I use Ack a lot, the Cap A always gets me, so I'm using a leader key remap instead.  This maps LeaderKey+a to :Ack -a
+" Also uses project Root plugin to search from root of current project
+"nnoremap <leader>a :ProjectRootExe Ack<Space>
+" I also use Ag (Silver Surfer)
+"nnoremap <leader>A :ProjectRootExe Ag<Space>
+
+"Search for the current selection
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
+command! Todo :Grepper -tool git -query '\(TODO\|FIXME\)'
 "---------------------- END ----------------------"
 "
 "--------------- Linting Behavior ----------------"
@@ -308,12 +335,6 @@ endif
 "
 "
 "----------------- Key Mappings ------------------"
-" Stupid shift key fixes
-cmap W w
-cmap WQ wq
-cmap wQ wq
-cmap Q q
-cmap Tabe tabe
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 " visual shifting (does not exit Visual mode)
@@ -346,13 +367,6 @@ nmap <silent> <c-s-l> <C-W>l
 " alt+arrow to move between tabs
 map <A-left> :tabp<CR>
 map <A-right> :tabn<CR>
-
-" I use Ack a lot, the Cap A always gets me, so I'm using a leader key remap instead.  This maps LeaderKey+a to :Ack -a
-" Also uses project Root plugin to search from root of current project
-nnoremap <leader>a :ProjectRootExe Ack<Space>
-
-" I also use Ag (Silver Surfer)
-nnoremap <leader>A :ProjectRootExe Ag<Space>
 "---------------------- END ----------------------"
 "
 "
