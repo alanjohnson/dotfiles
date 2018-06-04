@@ -26,3 +26,14 @@ for file in $files; do
 	echo "Creating symlink to $file in home directory."
 	ln -s $dir/$file ~/.$file
 done
+
+echo "Creating symlinks for neovim"
+mkdir -p ~/.config
+ln -s ~/dotfiles/vim ~/.config/nvim
+ln -s ~/dotfiles/vim ~/.nvim
+ln -s ~/dotfiles/vimrc ~/.nvimrc
+ln -s ~/dotfiles/vimrc ~/.config/nvim/init.vim
+#ln -s ~/dotfiles/vimrc ~/dotfiles/vim/init.vim
+
+echo "Creating symlinks for eslinterrc"
+ln -s ~/dotfiles/eslintrc.json ~/.eslintrc.json
