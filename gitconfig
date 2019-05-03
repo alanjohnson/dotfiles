@@ -10,6 +10,7 @@
 	undo = reset --soft HEAD~1
 [core]
 	excludesfile = ~/.gitignore
+	editor = subl -n -w
 [diff]
 	tool = diffmerge
 [difftool "diffmerge"]
