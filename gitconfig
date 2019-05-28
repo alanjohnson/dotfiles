@@ -11,16 +11,25 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = subl -n -w
-[diff]
-	tool = diffmerge
-[difftool "diffmerge"]
-	cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
-[merge]
-	tool = diffmerge
-[mergetool "diffmerge"]
-	cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
-	trustExitCode = true
 [push]
 	default = current
 [help]
 	autocorrect = 15
+# [diff]
+# 	tool = diffmerge
+# [difftool "diffmerge"]
+# 	cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
+# [merge]
+# 	tool = diffmerge
+# [mergetool "diffmerge"]
+# 	cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+# 	trustExitCode = true
+[merge]
+tool = sublimerge
+[mergetool "sublimerge"]
+cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+trustExitCode = false
+[diff]
+tool = sublimerge
+[difftool "sublimerge"]
+cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
