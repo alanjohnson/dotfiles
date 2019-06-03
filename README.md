@@ -1,6 +1,6 @@
 # dotfiles
 
-These all all my dotfile settings.  I use this repo to easily sharing between computers, or when setting up a new system with my prefered settings.
+These all all my dotfile settings.  This repo will set up my system preferences for me, withought having to manually do everything on each system.  or when setting up a new computer.
 
 To setup my system, All I do is 
 1) clone this repo into my root folder ~
