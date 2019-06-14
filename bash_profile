@@ -8,9 +8,9 @@ if [ -f ~/.profile ]; then
 fi
 #mysql path
 #export PATH=~/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
-export PATH=/usr/local/Cellar/mysql55/5.5.30:$PATH
-alias mysql='/usr/local/Cellar/mysql55/5.5.30/bin/mysql'
-alias mysqladmin='/usr/local/Cellar/mysql55/5.5.30/bin/mysqladmin'
+export PATH=/usr/local/Cellar/mysql/8.0.16:$PATH
+alias mysql='/usr/local/Cellar/mysql/8.0.16/bin/mysql'
+alias mysqladmin='/usr/local/Cellar/mysql/8.0.16/bin/mysqladmin'
 
 #nodejs
 export NODE_PATH=/usr/local/lib/node_modules

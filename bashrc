@@ -35,7 +35,7 @@ parse_git_branch() {
 
 export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\$(parse_git_branch)\n\$"
 
-export PATH=$PATH:$(brew --prefix mysql)/bin #Homebrew path
+# export PATH=$PATH:$(brew --prefix mysql)/bin #Homebrew path
 
 # UNCOMMENT these when facing problem in installing gems ( like libv8 and therubyracer )
 #export CC=/usr/local/bin/gcc-4.9
@@ -45,6 +45,7 @@ export PATH=$PATH:$(brew --prefix mysql)/bin #Homebrew path
 # fix bundle exe is not install error on some git repos
 
 PATH=$PATH:$VIMCONFIG/pack/bundle/start/fzf/bin #Add FzF to path
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# export PATH="$PATH:$HOME/.rvm/bin"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
