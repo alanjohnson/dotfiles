@@ -82,6 +82,7 @@ let NERDChristmasTree=1
 let g:colorizer_auto_filetype='css,sass,scss'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " LightLine - replacement form old POWERLINE plugin - Status line plugin settings
