@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/alan/sites/ahl/app/views/info'
 let g:netrw_dirhist_2='/Users/alan/sites/ahl/app/views'
 let g:netrw_dirhist_3='/Users/alan/.ssh'
 let g:netrw_dirhist_4='/Users/alan/.rvm/gems/ruby-1.9.3-p392/gems/jquery-rails-2.1.3'
+let g:netrw_dirhist_5='/Users/alan'
+let g:netrw_dirhist_6='/Users'

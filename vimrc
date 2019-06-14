@@ -20,45 +20,52 @@ cd ~/Sites/                       " Set the current/startup folder to something 
 "
 "
 "---------------- Plugin Settings ----------------"
-" Minpac - used to update all get repo plugins in one goo
+" Minpac - used to update all get repo plugins in one goooooo
+set packpath^=~/.vim
 packadd minpac
-call minpac#init()
-call minpac#add('k-takata/minpac', {'type': 'opt'})
-call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
-call minpac#add('tpope/vim-unimpaired')
-call minpac#add('scrooloose/nerdtree')
-call minpac#add('tpope/vim-rails')
-call minpac#add('tpope/vim-projectionist')
-call minpac#add('severin-lemaignan/vim-minimap')
-call minpac#add('lilydjwg/colorizer')
-call minpac#add('itchyny/lightline.vim')
-call minpac#add('ericbn/vim-solarized')
-call minpac#add('adelarsq/vim-matchit')
-call minpac#add('w0rp/ale')
-call minpac#add('ludovicchabant/vim-gutentags')
-call minpac#add('majutsushi/tagbar')
+if exists('*minpac#init')
+  call minpac#init({'verbose':4})
+  " minpac must have {'type': 'opt'} so that it can be loaded with `packadd`.
+  call minpac#add('k-takata/minpac', {'type': 'opt'})
+  " Add other plugins here.
+  call minpac#add('k-takata/minpac', {'type': 'opt'})
+  call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
+  call minpac#add('tpope/vim-unimpaired')
+  call minpac#add('scrooloose/nerdtree')
+  call minpac#add('Xuyuanp/nerdtree-git-plugin')
+  call minpac#add('tpope/vim-rails')
+  call minpac#add('tpope/vim-projectionist')
+  call minpac#add('severin-lemaignan/vim-minimap')
+  call minpac#add('lilydjwg/colorizer')
+  call minpac#add('itchyny/lightline.vim')
+  call minpac#add('ericbn/vim-solarized')
+  call minpac#add('adelarsq/vim-matchit')
+  call minpac#add('w0rp/ale')
+  call minpac#add('ludovicchabant/vim-gutentags')
+  call minpac#add('majutsushi/tagbar')
+  call minpac#add('dbakker/vim-projectroot')
+  call minpac#add('airblade/vim-rooter')
+  "autocmd BufEnter * :Rooter
+  let g:rooter_silent_chdir = 1
+  let g:rooter_resolve_links = 1
 
-"call minpac#add('dbakker/vim-projectroot')
-call minpac#add('airblade/vim-rooter')
-"autocmd BufEnter * :Rooter
-let g:rooter_silent_chdir = 1
-let g:rooter_resolve_links = 1
+  call minpac#add('mhinz/vim-grepper')
+  "call minpac#add('rking/ag.vim')
+  "call minpac#add('mileszs/ack.vim')
 
-call minpac#add('mhinz/vim-grepper')
-"call minpac#add('rking/ag.vim')
-"call minpac#add('mileszs/ack.vim')
+  call minpac#add('junegunn/fzf')
+  call minpac#add('junegunn/fzf.vim')
+  set rtp+=/usr/local/opt/fzf
+  nnoremap <C-f> :<C-u>FZF<CR>
 
-call minpac#add('junegunn/fzf')
-call minpac#add('junegunn/fzf.vim')
-set rtp+=/usr/local/opt/fzf
-nnoremap <C-f> :<C-u>FZF<CR>
+  command! UpdatePacks call minpac#update()
+command! -bang PackUpdate call pack#update(<bang>0)
 
-command! UpdatePacks call minpac#update()
+endif
 "---------------------- END ----------------------"
 
 " NERD Tree
 au BufEnter * lcd %:p:h         " set nerdtree to open in the current files folder
-au VimEnter *  NERDTree         " open nerd tree on startup
 map <F2> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 map <leader>e :NERDTreeFind<CR>
 nmap <leader>nt :NERDTreeFind<CR>
@@ -73,7 +80,9 @@ let NERDTreeKeepTreeInNewTab=1
 let NERDTreeAutoCenter=1
 let NERDChristmasTree=1
 let g:colorizer_auto_filetype='css,sass,scss'
+autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " LightLine - replacement form old POWERLINE plugin - Status line plugin settings
 let g:lightline = {

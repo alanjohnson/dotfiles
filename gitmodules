@@ -1,9 +1,0 @@
-[submodule "vim/pack/minpac/start/vim-projectroot"]
-	path = vim/pack/minpac/start/vim-projectroot
-	url = https://github.com/dbakker/vim-projectroot
-[submodule "vim/pack/minpac/start/command-t"]
-	path = vim/pack/minpac/start/command-t
-	url = https://github.com/wincent/command-t
-[submodule "vim/pack/minpac/opt/minpac"]
-	path = vim/pack/minpac/opt/minpac
-	url = https://github.com/k-takata/minpac.git
