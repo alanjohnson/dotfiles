@@ -6,7 +6,7 @@ To setup my system, All I do is
 1) clone this repo into my root folder ~
 ```bash
 $ cd ~
-$ git clone https://skittlyoaten@bitbucket.org/skittlyoaten/dotfiles.git
+$ git clone git@github.com:alanjohnson/dotfiles.git
 ```
 2) and then just run:
 ```bash
