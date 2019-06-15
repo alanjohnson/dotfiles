@@ -1,6 +1,6 @@
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = http://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/minpac"]
-  path = vim/pack/minpac/opt/minpac
+  path = vim/pack/minpac/start/minpac
   url = https://github.com/k-takata/minpac.git
+[submodule "vim/pack/nerdtree/start/nerdtree"]
+	path = vim/pack/nerdtree/start/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
