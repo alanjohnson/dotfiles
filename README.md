@@ -22,6 +22,8 @@ The script will:
 6) adds fancy terminal prompt to include active git branch.
 7) adds all my vim customization/ and settings
 
+## IF YOU FORK THIS YOU MUST:
+Update the gitconfig file with your own name and email.
 
 ## To Manually add git completion:
 ```bash
