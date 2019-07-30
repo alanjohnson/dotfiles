@@ -20,6 +20,7 @@ The script will:
 4) adds git autocompletion (tab will autocomplete git branches)
 5) adds Git custom log for easier viewing of commits.
 6) adds fancy terminal prompt to include active git branch.
+7) adds all my vim customization/ and settings
 
 
 ## To Manually add git completion:
