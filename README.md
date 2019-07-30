@@ -1,6 +1,6 @@
 # dotfiles
 
-These all all my dotfile settings.  This repo will set up my system preferences for me, withought having to manually do everything on each system.  or when setting up a new computer.
+These are all my dotfile settings.  This repo will set up my system preferences for me, withought having to manually do everything on each system.  or when setting up a new macbook.
 
 To setup my system, All I do is 
 1) clone this repo into my root folder ~
