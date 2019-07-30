@@ -25,6 +25,15 @@ The script will:
 ## IF YOU FORK THIS YOU MUST:
 Update the gitconfig file with your own name and email.
 
+Add minpac
+```bash
+git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac
+```
+install nerdtree
+```bash
+git clone git@github.com:scrooloose/nerdtree.git ~/dotfiles/vim/pack/nerdtree/start/nerdtree
+```
+
 ## To Manually add git completion:
 ```bash
 $ brew install wget
