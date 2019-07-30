@@ -1,6 +1,6 @@
 # dotfiles
 
-These are all my dotfile settings.  This repo will set up my system preferences for me, withought having to manually do everything on each system.  or when setting up a new macbook.
+These are all my dotfile settings.  This repo will set up my system preferences for me, without having to manually do everything on each system.  or when setting up a new macbook.
 
 To setup my system, All I do is 
 1) clone this repo into my root folder ~
@@ -8,7 +8,7 @@ To setup my system, All I do is
 $ cd ~
 $ git clone git@github.com:alanjohnson/dotfiles.git
 ```
-2) and then run (** see below for what this does):
+2) Backup old files and create the symlinks (** see below for details):
 ```bash
 $ sh ~/dotfiles/makesymlinks.sh
 ```
