@@ -11,6 +11,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = subl -n -w
+	ignorecase = false
 [push]
 	default = current
 [help]
