@@ -8,7 +8,7 @@ To setup my system, All I do is
 $ cd ~
 $ git clone git@github.com:alanjohnson/dotfiles.git
 ```
-2) and then run (** see below foo what this does):
+2) and then run (** see below for what this does):
 ```bash
 $ sh ~/dotfiles/makesymlinks.sh
 ```
