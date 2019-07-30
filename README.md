@@ -29,6 +29,7 @@ git clone git@github.com:scrooloose/nerdtree.git ~/dotfiles/vim/pack/nerdtree/st
 5) adds Git custom log for easier viewing of commits.
 6) adds fancy terminal prompt to include active git branch.
 7) adds all my vim customization/ and settings
+8) add symlinks for neovim
 
 ## IF YOU FORK THIS YOU MUST:
 Update the gitconfig file with your own name and email.
