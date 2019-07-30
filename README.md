@@ -8,7 +8,7 @@ To setup my system, All I do is
 $ cd ~
 $ git clone git@github.com:alanjohnson/dotfiles.git
 ```
-2) and then run:
+2) and then run (** see below foo what this does):
 ```bash
 $ sh ~/dotfiles/makesymlinks.sh
 ```
@@ -21,7 +21,7 @@ git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac
 git clone git@github.com:scrooloose/nerdtree.git ~/dotfiles/vim/pack/nerdtree/start/nerdtree
 ```
 
-The script will:
+** The makesymlinks script will:
 1) backup all the existing dotfiles
 2) create a dotfiles/ folder with all my dotfiles in it.
 3) create symlinks in ~ to the files in the /dotfiles repo.
