@@ -1,4 +1,4 @@
-#Default EDitor of choice
+#Default Editor of choice
 export EDITOR=vim
 
 ###Color settings

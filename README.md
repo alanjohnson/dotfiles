@@ -1,6 +1,6 @@
 # dotfiles
 
-These all all my dotfile settings.  This repo will set up my system preferences for me, withought having to manually do everything on each system.  or when setting up a new computer.
+These are all my dotfile settings.  This repo will set up my system preferences for me, without having to manually do everything on each system.  or when setting up a new macbook.
 
 To setup my system, All I do is 
 1) clone this repo into my root folder ~
@@ -8,19 +8,31 @@ To setup my system, All I do is
 $ cd ~
 $ git clone git@github.com:alanjohnson/dotfiles.git
 ```
-2) and then just run:
+2) Backup old files and create the symlinks (** see below for details):
 ```bash
 $ sh ~/dotfiles/makesymlinks.sh
 ```
+3) Add minpac
+```bash
+git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac
+```
+4) manually install nerdtree
+```bash
+git clone git@github.com:scrooloose/nerdtree.git ~/dotfiles/vim/pack/nerdtree/start/nerdtree
+```
 
-The script will:
+** The makesymlinks script will:
 1) backup all the existing dotfiles
 2) create a dotfiles/ folder with all my dotfiles in it.
 3) create symlinks in ~ to the files in the /dotfiles repo.
 4) adds git autocompletion (tab will autocomplete git branches)
 5) adds Git custom log for easier viewing of commits.
 6) adds fancy terminal prompt to include active git branch.
+7) adds all my vim customization/ and settings
+8) add symlinks for neovim
 
+## IF YOU FORK THIS YOU MUST:
+Update the gitconfig file with your own name and email.
 
 ## To Manually add git completion:
 ```bash
