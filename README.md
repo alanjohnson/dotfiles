@@ -4,20 +4,20 @@ These are all my dotfile settings.  This repo will set up my system preferences 
 
 To setup my system, All I do is
 1) clone this repo into my root folder ~
-```bash
+```zsh
 $ cd ~
 $ git clone git@github.com:alanjohnson/dotfiles.git
 ```
 2) Backup old files and create the symlinks (** see below for details):
-```bash
+```zsh
 $ sh ~/dotfiles/makesymlinks.sh
 ```
 3) Add minpac
-```bash
+```zsh
 git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac
 ```
 4) manually install nerdtree
-```bash
+```zsh
 git clone git@github.com:scrooloose/nerdtree.git ~/dotfiles/vim/pack/nerdtree/start/nerdtree
 ```
 
@@ -35,19 +35,35 @@ git clone git@github.com:scrooloose/nerdtree.git ~/dotfiles/vim/pack/nerdtree/st
 Update the gitconfig file with your own name and email.
 
 #ZSH
-Syntax highlighting in terminal:
+Apple has changed their default shell to ZSH.  So I'm going to split this into 2 sections. ZSH, and the original one BASH below.
+
+oh-my-zsh allows you to use a customs folder outside it's own.  This is important to do, IF you want to have a repo for all your plugins and custom themes.
+In my case, I made a folder: /dotfiles/zsh-customizations.
+
+any plugin/theme install you do should point to THIS folder.  not the oh-my-zsh custom folder.
+
+THE BELOW SHOULD BE INSTALLED ALREADY IF YOU ARE USING THIS REPO.
+###Syntax highlighting in terminal:
 make the command green if typed right, red if not, and underline existent folders/files
 ```bash
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/dotfiles/zsh-customizations/plugins/zsh-syntax-highlighting
 ```
-Auto suggeswtions, like recently typed commands
+###Auto suggestions, like recently typed commands
 ```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/dotfiles/zsh-customizations/plugins/zsh-autosuggestions
 ```
-Fuzzy fibnder in terminal!  Oh yeah. CTRL+T to do search
+###Fuzzy finder in terminal!  Oh yeah. CTRL+T to do search
 ```bash
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
 ```
+
+##powerline
+the powerline theme is installed, but if you want to use it you will need fonts.
+Nerd fonts are good.
+https://github.com/ryanoasis/nerd-fonts
+https://github.com/powerline/fonts
+
+in iTerm2 setup, you can use any font you want, and select the powerline font as the fallback.
 
 #BASH
 ## To Manually add git completion:
@@ -64,7 +80,6 @@ then run:
 ```bash
 $ source ~/.profile
 ```
-
 ## manually add custom gitlog
 ```bash
 git config --global alias.mylog "log --pretty=format:'%C(yellow)%h%Creset %C(bold blue)<%an>%Creset %C(red)%d%Creset %s %Cgreen(%cr) ' --abbrev-commit --date=short --branches"
@@ -73,7 +88,6 @@ to use, just run:
 ```bash
 $ git mylog
 ```
-
 ## manually add custom prompt
 add this to your .bashrc file
 ```bash
