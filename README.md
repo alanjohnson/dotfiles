@@ -2,7 +2,7 @@
 
 These are all my dotfile settings.  This repo will set up my system preferences for me, without having to manually do everything on each system.  or when setting up a new macbook.
 
-To setup my system, All I do is 
+To setup my system, All I do is
 1) clone this repo into my root folder ~
 ```bash
 $ cd ~
@@ -34,6 +34,22 @@ git clone git@github.com:scrooloose/nerdtree.git ~/dotfiles/vim/pack/nerdtree/st
 ## IF YOU FORK THIS YOU MUST:
 Update the gitconfig file with your own name and email.
 
+#ZSH
+Syntax highlighting in terminal:
+make the command green if typed right, red if not, and underline existent folders/files
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+Auto suggeswtions, like recently typed commands
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+Fuzzy fibnder in terminal!  Oh yeah. CTRL+T to do search
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+```
+
+#BASH
 ## To Manually add git completion:
 ```bash
 $ brew install wget
