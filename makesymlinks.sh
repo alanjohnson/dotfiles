@@ -34,6 +34,9 @@ ln -s ~/dotfiles/vim ~/.nvim
 ln -s ~/dotfiles/vimrc ~/.nvimrc
 ln -s ~/dotfiles/vimrc ~/.config/nvim/init.vim
 #ln -s ~/dotfiles/vimrc ~/dotfiles/vim/init.vim
+mv ~/.oh-my-zsh ~/dotfiles/oh-my-zsh
+ln -s ~/dotfiles/oh-my-zsh ~/.oh-my-zsh
+ln -s ~/dotfiles/zshrc ~/.zshrc
 
 echo "Creating symlinks for eslinterrc"
 ln -s ~/dotfiles/eslintrc.json ~/.eslintrc.json
