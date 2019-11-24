@@ -43,10 +43,10 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -76,7 +76,12 @@ ZSH_CUSTOM=$HOME/dotfiles/zsh-customizations
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  history
+  sudo
+  last-working-dir
   zsh-syntax-highlighting
+  npm
+  perms
   zsh-autosuggestions
 )
 
@@ -108,4 +113,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+export PATH="/usr/local/sbin:$PATH"
