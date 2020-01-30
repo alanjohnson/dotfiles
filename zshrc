@@ -82,7 +82,6 @@ plugins=(
   zsh-syntax-highlighting
   npm
   perms
-  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
