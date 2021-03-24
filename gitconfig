@@ -10,7 +10,8 @@
 	undo = reset --soft HEAD~1
 [core]
 	excludesfile = ~/.gitignore
-	editor = subl -n -w
+	#editor = subl -n -w
+	editor = code --wait
 	ignorecase = false
 [push]
 	default = current
