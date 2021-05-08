@@ -46,3 +46,5 @@
 	tool = vscode
 [difftool "vscode"]
 	cmd = code --wait --diff --new-window $LOCAL $REMOTE
+[rerere]
+	enabled = true
