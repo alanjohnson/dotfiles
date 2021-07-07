@@ -5,7 +5,9 @@
 
 dir=~/dotfiles # dotfiles directory
 olddir=~/dotfiles_old # old dotfiles backup directory
-files="bash_profile profile bashrc gitconfig gitignore git-completion git-completion.bash vim vimrc eslintrc zshrc zshenv" # list of files/folders to symlink in homedir
+#older version, if using bash
+#files="bash_profile profile bashrc gitconfig gitignore git-completion git-completion.bash vim vimrc eslintrc zshrc zshenv" # list of files/folders to symlink in homedir
+files="gitconfig gitignore vim vimrc eslintrc zshrc zshenv" # list of files/folders to symlink in homedir
 
 ##########
 
