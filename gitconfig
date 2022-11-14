@@ -13,6 +13,7 @@
 	#editor = subl -n -w
 	editor = code --wait
 	ignorecase = false
+	trustctime = true
 [push]
 	default = current
 [help]

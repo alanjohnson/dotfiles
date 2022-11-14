@@ -4,3 +4,6 @@
 [submodule "vim/pack/nerdtree/start/nerdtree"]
 	path = vim/pack/nerdtree/start/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
+[submodule "zsh-customizations/themes/powerlevel10k"]
+	path = zsh-customizations/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
