@@ -6,19 +6,21 @@ To setup my system, All I do is
 1) clone this repo into my root folder ~
 ```zsh
 $ cd ~
-$ git clone git@github.com:alanjohnson/dotfiles.git
+$ git clone --recursive -j4 git@github.com:alanjohnson/dotfiles.git
 ```
 2) Backup old files and create the symlinks (** see below for details):
 ```zsh
 $ sh ~/dotfiles/makesymlinks.sh
 ```
-3) Add minpac
+3) Update the submodules:
 ```zsh
-git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac
+git submodule update --recursive --remote
 ```
-4) manually install nerdtree
+
+TROUBLESHOOTING:
+IF the submdoules are missing, navigate to the empty folder and run:
 ```zsh
-git clone git@github.com:scrooloose/nerdtree.git ~/dotfiles/vim/pack/nerdtree/start/nerdtree
+git submodule update --init --recursive
 ```
 
 ** The makesymlinks script will:

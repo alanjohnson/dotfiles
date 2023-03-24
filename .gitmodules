@@ -1,15 +1,20 @@
+#VIM plugins
 [submodule "vim/bundle/minpac"]
   path = vim/pack/minpac/start/minpac
   url = https://github.com/k-takata/minpac.git
 [submodule "vim/pack/nerdtree/start/nerdtree"]
 	path = vim/pack/nerdtree/start/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
-[submodule "zsh-customizations/themes/powerlevel10k"]
-	path = zsh-customizations/themes/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
+# Other
 [submodule "zsh-customizations/plugins/zsh-hist"]
 	path = zsh-customizations/plugins/zsh-hist
 	url = https://github.com/marlonrichert/zsh-hist.git
 [submodule "zsh-customizations/plugins/zsh-syntax-highlighting"]
 	path = zsh-customizations/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "zsh-customizations/plugins/zsh-autosuggestions"]
+	path = zsh-customizations/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "zsh-customizations/themes/powerlevel10k"]
+	path = zsh-customizations/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
