@@ -7,3 +7,9 @@
 [submodule "zsh-customizations/themes/powerlevel10k"]
 	path = zsh-customizations/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "zsh-customizations/plugins/zsh-hist"]
+	path = zsh-customizations/plugins/zsh-hist
+	url = https://github.com/marlonrichert/zsh-hist.git
+[submodule "zsh-customizations/plugins/zsh-syntax-highlighting"]
+	path = zsh-customizations/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
