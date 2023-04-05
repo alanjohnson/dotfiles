@@ -14,7 +14,7 @@ set shell=/bin/bash\ -l           " set it to use bash_profile for aliases
 let mapleader = ","               " set leaderkey to a comma - The default leader is '\', but many people prefer ',' as it's in a easier to get location
 let maplocalleader=','            " same as above? setting leaderkey (all my macros start with ,)
 " Setup Bundle Support - The next two lines ensure that the ~/.vim/bundle/ system works
-cd ~/Sites/                       " Set the current/startup folder to something useful
+cd ~/Projects/                       " Set the current/startup folder to something useful
 "---------------------- END ----------------------"
 "
 "
@@ -31,7 +31,7 @@ if exists('*minpac#init')
   call minpac#add('k-takata/minpac', {'type': 'opt'})
   call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
   call minpac#add('tpope/vim-unimpaired')
-  call minpac#add('scrooloose/nerdtree')
+  call minpac#add('preservim/nerdtree')
   call minpac#add('Xuyuanp/nerdtree-git-plugin')
   call minpac#add('tpope/vim-rails')
   call minpac#add('tpope/vim-projectionist')
